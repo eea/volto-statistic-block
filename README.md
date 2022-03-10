@@ -19,7 +19,7 @@
 
 ## Features
 
-Demo GIF
+https://eea.github.io/volto-kitkat-frontend/?path=/story/components-statistic--default
 
 ## Getting started
 
