@@ -5,7 +5,7 @@ import StatisticBlockView from './View';
 export default (config) => {
   config.blocks.blocksConfig.statistic_block = {
     id: 'statistic_block',
-    title: 'Statistic block',
+    title: 'Statistic',
     icon: worldSVG,
     group: 'text',
     view: StatisticBlockView,
