@@ -1,12 +1,18 @@
 const statisticSchema = {
   title: 'Statistic item',
-  fieldsets: [{ id: 'default', title: 'Default', fields: ['value', 'label'] }],
+  fieldsets: [
+    { id: 'default', title: 'Default', fields: ['value', 'label', 'info'] },
+  ],
   properties: {
     value: {
       title: 'Value',
     },
     label: {
       title: 'Label',
+    },
+    info: {
+      title: 'Extra info',
+      widget: 'slate_richtext',
     },
   },
   required: [],

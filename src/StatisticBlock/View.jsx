@@ -1,5 +1,6 @@
 import React from 'react';
 import { Statistic } from 'semantic-ui-react';
+import { serializeText } from '@eeacms/volto-statistic-block/helpers';
 
 const View = ({ data, mode }) => {
   const {
@@ -27,6 +28,7 @@ const View = ({ data, mode }) => {
             >
               <Statistic.Value>{item.value}</Statistic.Value>
               <Statistic.Label>{item.label}</Statistic.Label>
+              <Statistic.Label>{serializeText(item.info)}</Statistic.Label>
             </Statistic>
           );
         })}
