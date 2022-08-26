@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git@github.com:eea/volto-statistic-block.git"
   },
+  "addons": [
+    "volto-slate"
+  ],
   "dependencies": {
     "volto-slate": "*",
     "@plone/scripts": "*"
