@@ -21,7 +21,7 @@ const View = ({ data, mode }) => {
     backgroundInverted = 'primary',
     valueVariation = 'secondary',
     labelVariation = 'tertiary',
-    slateVariation = 'tertiary',
+    extraVariation = 'tertiary',
   } = styles;
 
   if (!items.length && mode === 'edit') return <p>Add statistic items</p>;
@@ -39,7 +39,7 @@ const View = ({ data, mode }) => {
         backgroundvariant={backgroundInverted}
         valuevariation={valueVariation}
         labelvariation={labelVariation}
-        slatevariation={slateVariation}
+        extravariation={extraVariation}
         className={styles.align === 'full' ? 'ui container' : ''}
       >
         {items.map((item, index) => {
@@ -69,7 +69,7 @@ const View = ({ data, mode }) => {
               <Statistic.Label className={cx(labelVariation)}>
                 {item.label}
               </Statistic.Label>
-              <div className={cx('slate text-center', slateVariation)}>
+              <div className={cx('slate text-center', extraVariation)}>
                 {serializeText(item.info)}
               </div>
             </StatisticWrapper>

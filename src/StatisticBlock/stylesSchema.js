@@ -9,7 +9,7 @@ export default () => {
           'backgroundInverted',
           'valueVariation',
           'labelVariation',
-          'slateVariation',
+          'extraVariation',
         ],
       },
     ],
@@ -47,8 +47,8 @@ export default () => {
         ],
         defaultValue: 'tertiary',
       },
-      slateVariation: {
-        title: 'Slate variation',
+      extraVariation: {
+        title: 'Extra info variation',
         choices: [
           ['primary', 'Primary'],
           ['secondary', 'Secondary'],
