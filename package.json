@@ -20,8 +20,9 @@
     "volto-slate"
   ],
   "dependencies": {
-    "volto-slate": "*",
-    "@plone/scripts": "*"
+    "@plone/scripts": "*",
+    "react-countup": "6.3.1",
+    "volto-slate": "*"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.9.5",
