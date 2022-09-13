@@ -1,7 +1,14 @@
+import animationSchema from './animationSchema';
+import stylesSchema from './stylesSchema';
+
 const statisticSchema = {
   title: 'Statistic item',
   fieldsets: [
-    { id: 'default', title: 'Default', fields: ['value', 'label', 'info'] },
+    {
+      id: 'default',
+      title: 'Default',
+      fields: ['value', 'label', 'info', 'href'],
+    },
   ],
   properties: {
     value: {
@@ -13,6 +20,10 @@ const statisticSchema = {
     info: {
       title: 'Extra info',
       widget: 'slate_richtext',
+    },
+    href: {
+      title: 'Link',
+      widget: 'url',
     },
   },
   required: [],
@@ -26,6 +37,16 @@ export default {
       id: 'default',
       title: 'Default',
       fields: ['horizontal', 'inverted', 'size', 'widths', 'items'],
+    },
+    {
+      id: 'animation',
+      title: 'Animation',
+      fields: ['animation'],
+    },
+    {
+      id: 'styling',
+      title: 'Styling',
+      fields: ['styles'],
     },
   ],
 
@@ -63,6 +84,16 @@ export default {
       title: 'Statistic items',
       widget: 'object_list',
       schema: statisticSchema,
+    },
+    animation: {
+      widget: 'object',
+      title: 'Animation',
+      schema: animationSchema(),
+    },
+    styles: {
+      widget: 'object',
+      title: 'Styles',
+      schema: stylesSchema(),
     },
   },
 

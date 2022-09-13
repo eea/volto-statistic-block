@@ -1,6 +1,7 @@
 import iconSVG from '@plone/volto/icons/special-character.svg';
 import StatisticBlockEdit from './Edit';
 import StatisticBlockView from './View';
+import editSchema from './schema';
 
 export default (config) => {
   config.blocks.blocksConfig.statistic_block = {
@@ -17,6 +18,7 @@ export default (config) => {
       addPermission: [],
       view: [],
     },
+    editSchema,
   };
   return config;
 };

@@ -1,6 +1,11 @@
 import React from 'react';
+import cx from 'classnames';
+import CountUp from 'react-countup';
 import { Statistic } from 'semantic-ui-react';
+import { UniversalLink } from '@plone/volto/components';
 import { serializeText } from '@eeacms/volto-statistic-block/helpers';
+
+import './styles.less';
 
 const View = ({ data, mode }) => {
   const {
@@ -9,27 +14,65 @@ const View = ({ data, mode }) => {
     size = 'small',
     widths = 'one',
     items = [],
+    styles = {},
+    animation = {},
   } = data;
+  const {
+    backgroundInverted = 'primary',
+    valueVariation = 'secondary',
+    labelVariation = 'tertiary',
+    slateVariation = 'tertiary',
+  } = styles;
 
   if (!items.length && mode === 'edit') return <p>Add statistic items</p>;
   return (
-    <div>
+    <div
+      className={cx({
+        [`color-bg-${backgroundInverted}`]: inverted,
+      })}
+    >
       <Statistic.Group
         horizontal={horizontal}
         inverted={inverted}
         size={size}
         widths={widths}
+        backgroundvariant={backgroundInverted}
+        valuevariation={valueVariation}
+        labelvariation={labelVariation}
+        slatevariation={slateVariation}
+        className={styles.align === 'full' ? 'ui container' : ''}
       >
         {items.map((item, index) => {
+          const StatisticWrapper = item.href ? UniversalLink : Statistic;
           return (
-            <Statistic
+            <StatisticWrapper
               key={`${index}-${item.label}`}
-              className="eea-statistics"
+              {...(item.href
+                ? { className: 'ui statistic', href: item.href }
+                : {})}
             >
-              <Statistic.Value>{item.value}</Statistic.Value>
-              <Statistic.Label>{item.label}</Statistic.Label>
-              <Statistic.Label>{serializeText(item.info)}</Statistic.Label>
-            </Statistic>
+              <Statistic.Value className={cx(valueVariation)}>
+                <CountUp
+                  end={Number(item.value)}
+                  duration={
+                    animation.enabled
+                      ? animation.duration > 0
+                        ? animation.duration
+                        : 2
+                      : 0
+                  }
+                  decimals={animation.decimals > 0 ? animation.decimals : 0}
+                  prefix={animation.prefix || ''}
+                  suffix={animation.suffix || ''}
+                />
+              </Statistic.Value>
+              <Statistic.Label className={cx(labelVariation)}>
+                {item.label}
+              </Statistic.Label>
+              <div className={cx('slate text-center', slateVariation)}>
+                {serializeText(item.info)}
+              </div>
+            </StatisticWrapper>
           );
         })}
       </Statistic.Group>
