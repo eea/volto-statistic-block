@@ -22,6 +22,7 @@
   "dependencies": {
     "@plone/scripts": "*",
     "react-countup": "6.3.1",
+    "react-visibility-sensor": "5.1.1",
     "volto-slate": "*"
   },
   "devDependencies": {
