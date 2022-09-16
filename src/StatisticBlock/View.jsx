@@ -72,21 +72,19 @@ const View = ({ data, mode }) => {
                 : {})}
             >
               <Statistic.Value className={cx(valueVariation)}>
-                <CountUp
-                  end={Number(item.value)}
-                  duration={
-                    animation.enabled
-                      ? animation.duration > 0
-                        ? animation.duration
-                        : 2
-                      : 0
-                  }
-                  decimals={animation.decimals > 0 ? animation.decimals : 0}
-                  prefix={animation.prefix || ''}
-                  suffix={animation.suffix || ''}
-                >
-                  {(props) => <CountUpWrapper {...props} />}
-                </CountUp>
+                {animation.enabled ? (
+                  <CountUp
+                    end={Number(item.value)}
+                    duration={animation.duration > 0 ? animation.duration : 2}
+                    decimals={animation.decimals > 0 ? animation.decimals : 0}
+                    prefix={animation.prefix || ''}
+                    suffix={animation.suffix || ''}
+                  >
+                    {(props) => <CountUpWrapper {...props} />}
+                  </CountUp>
+                ) : (
+                  item.value
+                )}
               </Statistic.Value>
               <Statistic.Label className={cx(labelVariation)}>
                 {item.label}
