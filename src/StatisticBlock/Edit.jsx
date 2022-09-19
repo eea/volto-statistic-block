@@ -1,8 +1,9 @@
 import React from 'react';
-import { SidebarPortal } from '@plone/volto/components';
-import InlineForm from '@plone/volto/components/manage/Form/InlineForm';
+import { SidebarPortal, BlockDataForm } from '@plone/volto/components';
 import View from './View';
 import schema from './schema';
+
+import './styles.less';
 
 const Edit = (props) => {
   const { data = {}, block = null, selected = false, onChangeBlock } = props;
@@ -12,7 +13,7 @@ const Edit = (props) => {
       <View {...props} mode="edit" />
 
       <SidebarPortal selected={selected}>
-        <InlineForm
+        <BlockDataForm
           schema={schema}
           title={schema.title}
           onChangeField={(id, value) => {
@@ -22,6 +23,7 @@ const Edit = (props) => {
             });
           }}
           formData={data}
+          block={block}
         />
       </SidebarPortal>
     </>
