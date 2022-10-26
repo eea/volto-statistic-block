@@ -16,17 +16,14 @@
     "type": "git",
     "url": "git@github.com:eea/volto-statistic-block.git"
   },
-  "addons": [
-    "volto-slate"
-  ],
+  "addons": [],
   "dependencies": {
-    "@plone/scripts": "*",
     "react-countup": "6.3.1",
-    "react-visibility-sensor": "5.1.1",
-    "volto-slate": "*"
+    "react-visibility-sensor": "5.1.1"
   },
   "devDependencies": {
-    "@cypress/code-coverage": "^3.9.5",
+    "@plone/scripts": "*",
+    "@cypress/code-coverage": "^3.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "md5": "^2.3.0"
   },
