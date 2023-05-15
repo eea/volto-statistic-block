@@ -1,9 +1,38 @@
+import { defineMessages } from 'react-intl';
+
+const messages = defineMessages({
+  Default: {
+    id: 'Default',
+    defaultMessage: 'Default',
+  },
+  Align: {
+    id: 'Align',
+    defaultMessage: 'Align',
+  },
+  BackgroundWhenInverted: {
+    id: 'Background when inverted',
+    defaultMessage: 'Background when inverted',
+  },
+  Primary: {
+    id: 'Primary',
+    defaultMessage: 'Primary',
+  },
+  Secondary: {
+    id: 'Secondary',
+    defaultMessage: 'Secondary',
+  },
+  Tertiary: {
+    id: 'Tertiary',
+    defaultMessage: 'Tertiary',
+  },
+});
+
 export default () => {
   return {
     fieldsets: [
       {
         id: 'default',
-        title: 'Default',
+        title: intl.formatMessage(messages.Default),
         fields: [
           'align',
           'backgroundInverted',
@@ -17,42 +46,42 @@ export default () => {
     properties: {
       align: {
         widget: 'align',
-        title: 'Align',
+        title: intl.formatMessage(messages.Align),
         actions: ['center', 'wide', 'full'],
       },
       backgroundInverted: {
-        title: 'Background when inverted',
+        title: intl.formatMessage(messages.BackgroundWhenInverted),
         choices: [
-          ['primary', 'Primary'],
-          ['secondary', 'Secondary'],
-          ['tertiary', 'Tertiary'],
+          ['primary', intl.formatMessage(messages.Primary)],
+          ['secondary', intl.formatMessage(messages.Secondary)],
+          ['tertiary', intl.formatMessage(messages.Tertiary)],
         ],
         defaultValue: 'primary',
       },
       valueVariation: {
         title: 'Value variation',
         choices: [
-          ['primary', 'Primary'],
-          ['secondary', 'Secondary'],
-          ['tertiary', 'Tertiary'],
+          ['primary', intl.formatMessage(messages.Primary)],
+          ['secondary', intl.formatMessage(messages.Secondary)],
+          ['tertiary', intl.formatMessage(messages.Tertiary)],
         ],
         defaultValue: 'secondary',
       },
       labelVariation: {
         title: 'Label variation',
         choices: [
-          ['primary', 'Primary'],
-          ['secondary', 'Secondary'],
-          ['tertiary', 'Tertiary'],
+          ['primary', intl.formatMessage(messages.Primary)],
+          ['secondary', intl.formatMessage(messages.Secondary)],
+          ['tertiary', intl.formatMessage(messages.Tertiary)],
         ],
         defaultValue: 'tertiary',
       },
       extraVariation: {
         title: 'Extra info variation',
         choices: [
-          ['primary', 'Primary'],
-          ['secondary', 'Secondary'],
-          ['tertiary', 'Tertiary'],
+          ['primary', intl.formatMessage(messages.Primary)],
+          ['secondary', intl.formatMessage(messages.Secondary)],
+          ['tertiary', intl.formatMessage(messages.Tertiary)],
         ],
         defaultValue: 'tertiary',
       },
