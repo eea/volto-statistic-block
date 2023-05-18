@@ -5,6 +5,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 import { Statistic } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
 import { serializeText } from '@eeacms/volto-statistic-block/helpers';
+import { getFieldURL } from '@eeacms/volto-statistic-block/helpers';
 
 import './styles.less';
 
@@ -63,7 +64,9 @@ const View = ({ data, mode }) => {
         className={styles.align === 'full' ? 'ui container' : ''}
       >
         {items.map((item, index) => {
-          const StatisticWrapper = item.href ? UniversalLink : Statistic;
+          const StatisticWrapper = getFieldURL(item.href)
+            ? UniversalLink
+            : Statistic;
           return (
             <StatisticWrapper
               key={`${index}-${item.label}`}
