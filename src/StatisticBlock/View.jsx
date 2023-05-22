@@ -73,8 +73,8 @@ const View = ({ data, mode }) => {
       >
         {items.map((item, index) => {
           const StatisticWrapper = item.href ? UniversalLink : Statistic;
-          const slateNodes = serializeToNodes(item.value);
-          const valueNo = Number(serializeNodesToText(slateNodes));
+          const valueNodes = serializeToNodes(item.value);
+          const valueNo = Number(serializeNodesToText(valueNodes));
 
           return (
             <StatisticWrapper
@@ -95,7 +95,7 @@ const View = ({ data, mode }) => {
                     {(props) => <CountUpWrapper {...props} />}
                   </CountUp>
                 ) : (
-                  _serializeNodes(slateNodes)
+                  _serializeNodes(valueNodes)
                 )}
               </Statistic.Value>
               <Statistic.Label className={cx('slate', labelVariation)}>
