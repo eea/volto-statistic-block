@@ -71,10 +71,10 @@ const View = ({ data, mode }) => {
                 ? { className: 'ui statistic', href: item.href }
                 : {})}
             >
-              <Statistic.Value className={cx(valueVariation)}>
+              <Statistic.Value className={cx('slate', valueVariation)}>
                 {animation.enabled ? (
                   <CountUp
-                    end={Number(item.value)}
+                    end={Number(serializeText(item.value))}
                     duration={animation.duration > 0 ? animation.duration : 2}
                     decimals={animation.decimals > 0 ? animation.decimals : 0}
                     prefix={animation.prefix || ''}
@@ -83,11 +83,11 @@ const View = ({ data, mode }) => {
                     {(props) => <CountUpWrapper {...props} />}
                   </CountUp>
                 ) : (
-                  item.value
+                  serializeText(item.value)
                 )}
               </Statistic.Value>
-              <Statistic.Label className={cx(labelVariation)}>
-                {item.label}
+              <Statistic.Label className={cx('slate', labelVariation)}>
+                {serializeText(item.label)}
               </Statistic.Label>
               <div className={cx('slate text-center', extraVariation)}>
                 {serializeText(item.info)}
