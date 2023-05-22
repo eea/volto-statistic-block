@@ -13,9 +13,11 @@ const statisticSchema = {
   properties: {
     value: {
       title: 'Value',
+      widget: 'slate_richtext',
     },
     label: {
       title: 'Label',
+      widget: 'slate_richtext',
     },
     info: {
       title: 'Extra info',

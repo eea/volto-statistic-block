@@ -1,6 +1,6 @@
 {
   "name": "@eeacms/volto-statistic-block",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "@eeacms/volto-statistic-block: Volto add-on",
   "main": "src/index.js",
   "author": "European Environment Agency: IDM2 A-Team",
@@ -17,6 +17,9 @@
     "url": "git@github.com:eea/volto-statistic-block.git"
   },
   "addons": [],
+  "resolutions": {
+    "react-countup/countup.js": "2.5.0"
+  },
   "dependencies": {
     "react-countup": "6.3.1",
     "react-visibility-sensor": "5.1.1"
