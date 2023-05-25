@@ -64,15 +64,12 @@ const View = ({ data, mode }) => {
         className={styles.align === 'full' ? 'ui container' : ''}
       >
         {items.map((item, index) => {
-          const StatisticWrapper = getFieldURL(item.href)
-            ? UniversalLink
-            : Statistic;
+          const href = getFieldURL(item.href);
+          const StatisticWrapper = href ? UniversalLink : Statistic;
           return (
             <StatisticWrapper
               key={`${index}-${item.label}`}
-              {...(item.href
-                ? { className: 'ui statistic', href: item.href }
-                : {})}
+              {...(href ? { className: 'ui statistic', href: item.href } : {})}
             >
               <Statistic.Value className={cx(valueVariation)}>
                 {animation.enabled ? (
