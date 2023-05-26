@@ -11,6 +11,7 @@ import {
   serializeNodesToText,
 } from '@plone/volto-slate/editor/render';
 import {
+  getFieldURL,
   serializeToNodes,
   serializeNodes,
 } from '@eeacms/volto-statistic-block/helpers';
@@ -72,6 +73,7 @@ const View = ({ data, mode }) => {
         className={styles.align === 'full' ? 'ui container' : ''}
       >
         {items.map((item, index) => {
+          const href = getFieldURL(item.href);
           const StatisticWrapper = item.href ? UniversalLink : Statistic;
           const valueNodes = serializeToNodes(item.value);
           const valueNo = Number(serializeNodesToText(valueNodes));
@@ -79,9 +81,7 @@ const View = ({ data, mode }) => {
           return (
             <StatisticWrapper
               key={`${index}-${item.label}`}
-              {...(item.href
-                ? { className: 'ui statistic', href: item.href }
-                : {})}
+              {...(href ? { className: 'ui statistic', href: item.href } : {})}
             >
               <Statistic.Value className={cx('slate', valueVariation)}>
                 {animation.enabled && isNumber(valueNo) && !isNaN(valueNo) ? (
