@@ -1,11 +1,20 @@
 import React from 'react';
+import isNumber from 'lodash/isNumber';
+import isNaN from 'lodash/isNaN';
 import cx from 'classnames';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { Statistic } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
-import { serializeText } from '@eeacms/volto-statistic-block/helpers';
-import { getFieldURL } from '@eeacms/volto-statistic-block/helpers';
+import {
+  serializeNodes as _serializeNodes,
+  serializeNodesToText,
+} from '@plone/volto-slate/editor/render';
+import {
+  getFieldURL,
+  serializeToNodes,
+  serializeNodes,
+} from '@eeacms/volto-statistic-block/helpers';
 
 import './styles.less';
 
@@ -65,16 +74,19 @@ const View = ({ data, mode }) => {
       >
         {items.map((item, index) => {
           const href = getFieldURL(item.href);
-          const StatisticWrapper = href ? UniversalLink : Statistic;
+          const StatisticWrapper = item.href ? UniversalLink : Statistic;
+          const valueNodes = serializeToNodes(item.value);
+          const valueNo = Number(serializeNodesToText(valueNodes));
+
           return (
             <StatisticWrapper
               key={`${index}-${item.label}`}
               {...(href ? { className: 'ui statistic', href: item.href } : {})}
             >
-              <Statistic.Value className={cx(valueVariation)}>
-                {animation.enabled ? (
+              <Statistic.Value className={cx('slate', valueVariation)}>
+                {animation.enabled && isNumber(valueNo) && !isNaN(valueNo) ? (
                   <CountUp
-                    end={Number(item.value)}
+                    end={valueNo}
                     duration={animation.duration > 0 ? animation.duration : 2}
                     decimals={animation.decimals > 0 ? animation.decimals : 0}
                     prefix={animation.prefix || ''}
@@ -83,14 +95,14 @@ const View = ({ data, mode }) => {
                     {(props) => <CountUpWrapper {...props} />}
                   </CountUp>
                 ) : (
-                  item.value
+                  _serializeNodes(valueNodes)
                 )}
               </Statistic.Value>
-              <Statistic.Label className={cx(labelVariation)}>
-                {item.label}
+              <Statistic.Label className={cx('slate', labelVariation)}>
+                {serializeNodes(item.label)}
               </Statistic.Label>
               <div className={cx('slate text-center', extraVariation)}>
-                {serializeText(item.info)}
+                {serializeNodes(item.info)}
               </div>
             </StatisticWrapper>
           );
