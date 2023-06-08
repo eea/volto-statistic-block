@@ -48,6 +48,7 @@ const View = ({ data, mode }) => {
     animation = {},
   } = data;
   const {
+    textAlign = 'center',
     backgroundInverted = 'primary',
     valueVariation = 'secondary',
     labelVariation = 'tertiary',
@@ -70,7 +71,7 @@ const View = ({ data, mode }) => {
         valuevariation={valueVariation}
         labelvariation={labelVariation}
         extravariation={extraVariation}
-        className={styles.align === 'full' ? 'ui container' : ''}
+        className={cx(textAlign, { 'ui container': styles.align === 'full' })}
       >
         {items.map((item, index) => {
           const href = getFieldURL(item.href);

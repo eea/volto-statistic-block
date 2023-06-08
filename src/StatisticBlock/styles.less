@@ -1,8 +1,28 @@
-.ui.statistic {
-  .slate {
-    p {
-      margin-bottom: 0;
-      color: inherit;
+.ui.statistics {
+  .ui.statistic {
+    .slate {
+      p {
+        margin-bottom: 0;
+        color: inherit;
+      }
+    }
+  }
+
+  &.left {
+    .ui.statistic {
+      align-items: flex-start;
+    }
+  }
+
+  &.center {
+    .ui.statistic {
+      align-items: center;
+    }
+  }
+
+  &.right {
+    .ui.statistic {
+      align-items: flex-end;
     }
   }
 }
