@@ -84,7 +84,9 @@ const View = ({ data, mode }) => {
               key={`${index}-${item.label}`}
               {...(href ? { className: 'ui statistic', href } : {})}
             >
-              <Statistic.Value className={cx('slate', valueVariation)}>
+              <Statistic.Value
+                className={cx('slate', `text-${textAlign}`, valueVariation)}
+              >
                 {animation.enabled && isNumber(valueNo) && !isNaN(valueNo) ? (
                   <CountUp
                     end={valueNo}
@@ -99,10 +101,12 @@ const View = ({ data, mode }) => {
                   _serializeNodes(valueNodes)
                 )}
               </Statistic.Value>
-              <Statistic.Label className={cx('slate', labelVariation)}>
+              <Statistic.Label
+                className={cx('slate', `text-${textAlign}`, labelVariation)}
+              >
                 {serializeNodes(item.label)}
               </Statistic.Label>
-              <div className={cx('slate text-center', extraVariation)}>
+              <div className={cx('slate', `text-${textAlign}`, extraVariation)}>
                 {serializeNodes(item.info)}
               </div>
             </StatisticWrapper>
