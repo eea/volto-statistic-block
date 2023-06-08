@@ -75,14 +75,14 @@ const View = ({ data, mode }) => {
       >
         {items.map((item, index) => {
           const href = getFieldURL(item.href);
-          const StatisticWrapper = item.href ? UniversalLink : Statistic;
+          const StatisticWrapper = href ? UniversalLink : Statistic;
           const valueNodes = serializeToNodes(item.value);
           const valueNo = Number(serializeNodesToText(valueNodes));
 
           return (
             <StatisticWrapper
               key={`${index}-${item.label}`}
-              {...(href ? { className: 'ui statistic', href: item.href } : {})}
+              {...(href ? { className: 'ui statistic', href } : {})}
             >
               <Statistic.Value className={cx('slate', valueVariation)}>
                 {animation.enabled && isNumber(valueNo) && !isNaN(valueNo) ? (
