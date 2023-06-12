@@ -6,6 +6,7 @@ export default () => {
         title: 'Default',
         fields: [
           'align',
+          'textAlign',
           'backgroundInverted',
           'valueVariation',
           'labelVariation',
@@ -19,6 +20,11 @@ export default () => {
         widget: 'align',
         title: 'Align',
         actions: ['center', 'wide', 'full'],
+      },
+      textAlign: {
+        title: 'Text align',
+        widget: 'style_text_align',
+        default: 'center',
       },
       backgroundInverted: {
         title: 'Background when inverted',

@@ -11,6 +11,7 @@ import {
   serializeNodesToText,
 } from '@plone/volto-slate/editor/render';
 import {
+  getFieldURL,
   serializeToNodes,
   serializeNodes,
 } from '@eeacms/volto-statistic-block/helpers';
@@ -47,6 +48,7 @@ const View = ({ data, mode }) => {
     animation = {},
   } = data;
   const {
+    textAlign = 'center',
     backgroundInverted = 'primary',
     valueVariation = 'secondary',
     labelVariation = 'tertiary',
@@ -69,21 +71,22 @@ const View = ({ data, mode }) => {
         valuevariation={valueVariation}
         labelvariation={labelVariation}
         extravariation={extraVariation}
-        className={styles.align === 'full' ? 'ui container' : ''}
+        className={cx(textAlign, { 'ui container': styles.align === 'full' })}
       >
         {items.map((item, index) => {
-          const StatisticWrapper = item.href ? UniversalLink : Statistic;
+          const href = getFieldURL(item.href);
+          const StatisticWrapper = href ? UniversalLink : Statistic;
           const valueNodes = serializeToNodes(item.value);
           const valueNo = Number(serializeNodesToText(valueNodes));
 
           return (
             <StatisticWrapper
               key={`${index}-${item.label}`}
-              {...(item.href
-                ? { className: 'ui statistic', href: item.href }
-                : {})}
+              {...(href ? { className: 'ui statistic', href } : {})}
             >
-              <Statistic.Value className={cx('slate', valueVariation)}>
+              <Statistic.Value
+                className={cx('slate', `text-${textAlign}`, valueVariation)}
+              >
                 {animation.enabled && isNumber(valueNo) && !isNaN(valueNo) ? (
                   <CountUp
                     end={valueNo}
@@ -98,10 +101,12 @@ const View = ({ data, mode }) => {
                   _serializeNodes(valueNodes)
                 )}
               </Statistic.Value>
-              <Statistic.Label className={cx('slate', labelVariation)}>
+              <Statistic.Label
+                className={cx('slate', `text-${textAlign}`, labelVariation)}
+              >
                 {serializeNodes(item.label)}
               </Statistic.Label>
-              <div className={cx('slate text-center', extraVariation)}>
+              <div className={cx('slate', `text-${textAlign}`, extraVariation)}>
                 {serializeNodes(item.info)}
               </div>
             </StatisticWrapper>
