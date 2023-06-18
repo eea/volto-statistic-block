@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2023-05-15T21:18:30.097Z\n"
+"POT-Creation-Date: 2023-06-18T05:29:51.680Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -70,6 +70,11 @@ msgstr ""
 msgid "Extra info"
 msgstr ""
 
+#: StatisticBlock/stylesSchema
+# defaultMessage: Extra info variation
+msgid "Extra info variation"
+msgstr ""
+
 #: StatisticBlock/schema
 # defaultMessage: Four
 msgid "Four"
@@ -93,6 +98,11 @@ msgstr ""
 #: StatisticBlock/schema
 # defaultMessage: Label
 msgid "Label"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Label variation
+msgid "Label variation"
 msgstr ""
 
 #: StatisticBlock/schema
@@ -180,6 +190,11 @@ msgstr ""
 msgid "Tertiary"
 msgstr ""
 
+#: StatisticBlock/stylesSchema
+# defaultMessage: Text align
+msgid "Text align"
+msgstr ""
+
 #: StatisticBlock/schema
 # defaultMessage: Three
 msgid "Three"
@@ -198,4 +213,9 @@ msgstr ""
 #: StatisticBlock/schema
 # defaultMessage: Value
 msgid "Value"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Value variation
+msgid "Value variation"
 msgstr ""

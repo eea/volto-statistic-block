@@ -68,6 +68,11 @@ msgstr ""
 msgid "Extra info"
 msgstr ""
 
+#: StatisticBlock/stylesSchema
+# defaultMessage: Extra info variation
+msgid "Extra info variation"
+msgstr ""
+
 #: StatisticBlock/schema
 # defaultMessage: Four
 msgid "Four"
@@ -91,6 +96,11 @@ msgstr ""
 #: StatisticBlock/schema
 # defaultMessage: Label
 msgid "Label"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Label variation
+msgid "Label variation"
 msgstr ""
 
 #: StatisticBlock/schema
@@ -178,6 +188,11 @@ msgstr ""
 msgid "Tertiary"
 msgstr ""
 
+#: StatisticBlock/stylesSchema
+# defaultMessage: Text align
+msgid "Text align"
+msgstr ""
+
 #: StatisticBlock/schema
 # defaultMessage: Three
 msgid "Three"
@@ -196,4 +211,9 @@ msgstr ""
 #: StatisticBlock/schema
 # defaultMessage: Value
 msgid "Value"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Value variation
+msgid "Value variation"
 msgstr ""

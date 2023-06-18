@@ -9,9 +9,25 @@ const messages = defineMessages({
     id: 'Align',
     defaultMessage: 'Align',
   },
+  TextAlign: {
+    id: 'Text align',
+    defaultMessage: 'Text align',
+  },
   BackgroundWhenInverted: {
     id: 'Background when inverted',
     defaultMessage: 'Background when inverted',
+  },
+  ValueVariation: {
+    id: 'Value variation',
+    defaultMessage: 'Value variation',
+  },
+  LabelVariation: {
+    id: 'Label variation',
+    defaultMessage: 'Label variation',
+  },
+  ExtraInfoVariation: {
+    id: 'Extra info variation',
+    defaultMessage: 'Extra info variation',
   },
   Primary: {
     id: 'Primary',
@@ -51,7 +67,7 @@ export default () => {
         actions: ['center', 'wide', 'full'],
       },
       textAlign: {
-        title: 'Text align',
+        title: intl.formatMessage(messages.TextAlign),
         widget: 'style_text_align',
         default: 'center',
       },
@@ -65,7 +81,7 @@ export default () => {
         defaultValue: 'primary',
       },
       valueVariation: {
-        title: 'Value variation',
+        title: intl.formatMessage(messages.ValueVariation),
         choices: [
           ['primary', intl.formatMessage(messages.Primary)],
           ['secondary', intl.formatMessage(messages.Secondary)],
@@ -74,7 +90,7 @@ export default () => {
         defaultValue: 'secondary',
       },
       labelVariation: {
-        title: 'Label variation',
+        title: intl.formatMessage(messages.LabelVariation),
         choices: [
           ['primary', intl.formatMessage(messages.Primary)],
           ['secondary', intl.formatMessage(messages.Secondary)],
@@ -83,7 +99,7 @@ export default () => {
         defaultValue: 'tertiary',
       },
       extraVariation: {
-        title: 'Extra info variation',
+        title: intl.formatMessage(messages.ExtraInfoVariation),
         choices: [
           ['primary', intl.formatMessage(messages.Primary)],
           ['secondary', intl.formatMessage(messages.Secondary)],

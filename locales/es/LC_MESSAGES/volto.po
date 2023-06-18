@@ -77,6 +77,11 @@ msgstr "Habilitar animación"
 msgid "Extra info"
 msgstr "Información extra"
 
+#: StatisticBlock/stylesSchema
+# defaultMessage: Extra info variation
+msgid "Extra info variation"
+msgstr ""
+
 #: StatisticBlock/schema
 # defaultMessage: Four
 msgid "Four"
@@ -101,6 +106,11 @@ msgstr "Invertido"
 # defaultMessage: Label
 msgid "Label"
 msgstr "Etiqueta"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Label variation
+msgid "Label variation"
+msgstr ""
 
 #: StatisticBlock/schema
 # defaultMessage: Large
@@ -187,6 +197,11 @@ msgstr "Sufijo"
 msgid "Tertiary"
 msgstr "Terciario"
 
+#: StatisticBlock/stylesSchema
+# defaultMessage: Text align
+msgid "Text align"
+msgstr ""
+
 #: StatisticBlock/schema
 # defaultMessage: Three
 msgid "Three"
@@ -206,3 +221,8 @@ msgstr "Dos"
 # defaultMessage: Value
 msgid "Value"
 msgstr "Valor"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Value variation
+msgid "Value variation"
+msgstr ""
