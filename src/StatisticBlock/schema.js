@@ -109,7 +109,7 @@ const messages = defineMessages({
   },
 });
 
-const statisticSchema = {
+const statisticSchema = ({ intl }) => ({
   title: intl.formatMessage(messages.StatisticItem),
   fieldsets: [
     {
@@ -137,7 +137,7 @@ const statisticSchema = {
     },
   },
   required: [],
-};
+});
 
 export default {
   title: intl.formatMessage(messages.StatisticBlock),
