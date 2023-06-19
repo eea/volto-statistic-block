@@ -163,7 +163,9 @@ export default {
   properties: {
     horizontal: {
       title: intl.formatMessage(messages.Horizontal),
-      description: intl.formatMessage(messages.CanPresentItsMeasurementHorizontally),
+      description: intl.formatMessage(
+        messages.CanPresentItsMeasurementHorizontally
+      ),
       type: 'boolean',
     },
     inverted: {
