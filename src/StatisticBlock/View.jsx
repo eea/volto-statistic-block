@@ -54,6 +54,7 @@ const View = ({ data, mode }) => {
     labelVariation = 'tertiary',
     extraVariation = 'tertiary',
   } = styles;
+
   if (!items.length && mode === 'edit') return <p>Add statistic items</p>;
   return (
     <div
