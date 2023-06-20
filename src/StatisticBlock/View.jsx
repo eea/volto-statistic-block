@@ -74,7 +74,7 @@ const View = ({ data, mode }) => {
         className={cx(textAlign, { 'ui container': styles.align === 'full' })}
       >
         {items.map((item, index) => {
-          const href = getFieldURL(item.href);
+          const href = mode !== 'edit' ? getFieldURL(item.href) : '#';
           const StatisticWrapper = href ? UniversalLink : Statistic;
           const valueNodes = serializeToNodes(item.value);
           const valueNo = Number(serializeNodesToText(valueNodes));
