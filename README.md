@@ -19,7 +19,7 @@
 
 ## Features
 
-https://eea.github.io/volto-kitkat-frontend/?path=/story/components-statistic--default
+- [Statistic Component Storybook](https://eea.github.io/eea-storybook/?path=/story/components-statistic--default).
 
 ## Getting started
 
