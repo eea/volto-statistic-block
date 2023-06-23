@@ -7,7 +7,7 @@ import '@testing-library/jest-dom/extend-expect';
 jest.mock('lodash/isNumber', () => jest.fn(() => true));
 jest.mock('lodash/isNaN', () => jest.fn(() => false));
 
-jest.mock('react-countup', () => () => <div>Mocked CountUp</div>);
+jest.mock('./components/Countup', () => () => <div>Mocked CountUp</div>);
 
 jest.mock('@plone/volto/components', () => ({
   UniversalLink: ({ children }) => <div>{children}</div>,
