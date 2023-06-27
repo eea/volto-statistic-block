@@ -2,7 +2,7 @@ import React from 'react';
 import isNumber from 'lodash/isNumber';
 import isNaN from 'lodash/isNaN';
 import cx from 'classnames';
-import CountUp from './components/CountUp';
+import Countup from '@eeacms/countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { Statistic } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
@@ -88,7 +88,7 @@ const View = ({ data, mode }) => {
                 className={cx('slate', `text-${textAlign}`, valueVariation)}
               >
                 {animation.enabled && isNumber(valueNo) && !isNaN(valueNo) ? (
-                  <CountUp
+                  <Countup
                     end={valueNo}
                     duration={animation.duration > 0 ? animation.duration : 2}
                     decimals={animation.decimals > 0 ? animation.decimals : 0}
@@ -96,7 +96,7 @@ const View = ({ data, mode }) => {
                     suffix={animation.suffix || ''}
                   >
                     {(props) => <CountUpWrapper {...props} />}
-                  </CountUp>
+                  </Countup>
                 ) : (
                   _serializeNodes(valueNodes)
                 )}
