@@ -2,7 +2,7 @@
 
 ## Develop
 
-Before starting make sure your development environment is properly set. See [Volto Developer Documentation](https://docs.voltocms.com/getting-started/install/)
+Before starting make sure your development environment is properly set. See [Volto Developer Documentation](https://6.docs.plone.org/volto/getting-started/install.html)
 
 1.  Make sure you have installed `yo`, `@plone/generator-volto` and `mrs-developer`
 
