@@ -3,11 +3,11 @@ import { render } from '@testing-library/react';
 import View from './View';
 import isNumber from 'lodash/isNumber';
 import '@testing-library/jest-dom/extend-expect';
-
+import { Countup } from '@eeacms/countup';
 jest.mock('lodash/isNumber', () => jest.fn(() => true));
 jest.mock('lodash/isNaN', () => jest.fn(() => false));
 
-jest.mock('./components/CountUp', () => () => <div>Mocked CountUp</div>);
+jest.mock(Countup, () => () => <div>Mocked CountUp</div>);
 
 jest.mock('@plone/volto/components', () => ({
   UniversalLink: ({ children }) => <div>{children}</div>,
