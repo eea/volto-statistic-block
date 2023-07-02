@@ -18,7 +18,7 @@
   },
   "addons": [],
   "dependencies": {
-    "@eeacms/countup": "0.2.2-beta",
+    "@eeacms/countup": "1.0.0",
     "react-visibility-sensor": "5.1.1"
   },
   "devDependencies": {

@@ -2,7 +2,7 @@ import React from 'react';
 import isNumber from 'lodash/isNumber';
 import isNaN from 'lodash/isNaN';
 import cx from 'classnames';
-import Countup from '@eeacms/countup';
+import { Countup } from '@eeacms/countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { Statistic } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
