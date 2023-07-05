@@ -8,7 +8,7 @@ jest.mock('lodash/isNumber', () => jest.fn(() => true));
 jest.mock('lodash/isNaN', () => jest.fn(() => false));
 
 jest.mock('@eeacms/countup', () => ({
-  Countup: () => {
+  CountUp: () => {
     return <div>Mocked CountUp</div>;
   },
 }));
