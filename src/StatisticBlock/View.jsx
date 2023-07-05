@@ -2,8 +2,7 @@ import React from 'react';
 import isNumber from 'lodash/isNumber';
 import isNaN from 'lodash/isNaN';
 import cx from 'classnames';
-import { Countup } from '@eeacms/countup';
-import VisibilitySensor from 'react-visibility-sensor';
+import { CountUp } from '@eeacms/countup';
 import { Statistic } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
 import {
@@ -17,25 +16,6 @@ import {
 } from '@eeacms/volto-statistic-block/helpers';
 
 import './styles.less';
-
-const CountUpWrapper = ({ countUpRef, start }) => {
-  const [visible, setVisible] = React.useState(false);
-
-  return (
-    <VisibilitySensor
-      onChange={(isVisible) => {
-        start();
-        if (isVisible && !visible) {
-          setVisible(true);
-        }
-      }}
-      active={!visible}
-      delayedCall
-    >
-      <span ref={countUpRef} />
-    </VisibilitySensor>
-  );
-};
 
 const View = ({ data, mode }) => {
   const {
@@ -88,15 +68,23 @@ const View = ({ data, mode }) => {
                 className={cx('slate', `text-${textAlign}`, valueVariation)}
               >
                 {animation.enabled && isNumber(valueNo) && !isNaN(valueNo) ? (
-                  <Countup
+                  <CountUp
                     end={valueNo}
-                    duration={animation.duration > 0 ? animation.duration : 2}
-                    decimals={animation.decimals > 0 ? animation.decimals : 0}
-                    prefix={animation.prefix || ''}
-                    suffix={animation.suffix || ''}
-                  >
-                    {(props) => <CountUpWrapper {...props} />}
-                  </Countup>
+                    isCounting
+                    duration={parseInt(
+                      animation.duration > 0 ? animation.duration : 2,
+                    )}
+                    decimalPlaces={
+                      animation.decimals > 0 ? animation.decimals : 0
+                    }
+                    formatter={(value) => {
+                      let prefix = animation.prefix || '';
+                      let suffix = animation.suffix || '';
+                      return (
+                        prefix + value.toFixed(animation.decimals) + suffix
+                      );
+                    }}
+                  />
                 ) : (
                   _serializeNodes(valueNodes)
                 )}
