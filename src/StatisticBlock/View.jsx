@@ -74,15 +74,18 @@ const View = ({ data, mode }) => {
         className={cx(textAlign, { 'ui container': styles.align === 'full' })}
       >
         {items.map((item, index) => {
-          const href = getFieldURL(item.href);
-          const StatisticWrapper = href ? UniversalLink : Statistic;
+          const href = mode !== 'edit' ? getFieldURL(item.href) : '#';
+          const StatisticWrapper =
+            href && href !== '#' ? UniversalLink : Statistic;
           const valueNodes = serializeToNodes(item.value);
           const valueNo = Number(serializeNodesToText(valueNodes));
 
           return (
             <StatisticWrapper
               key={`${index}-${item.label}`}
-              {...(href ? { className: 'ui statistic', href } : {})}
+              {...(href && href !== '#'
+                ? { className: 'ui statistic', href }
+                : {})}
             >
               <Statistic.Value
                 className={cx('slate', `text-${textAlign}`, valueVariation)}
