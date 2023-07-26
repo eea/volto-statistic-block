@@ -14,12 +14,13 @@
 [![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-develop&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-develop)
 [![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-develop)
 
-
 [Volto](https://github.com/plone/volto) add-on
 
 ## Features
 
 https://eea.github.io/volto-kitkat-frontend/?path=/story/components-statistic--default
+
+![Statistic Block](https://github.com/eea/volto-statistic-block/raw/develop/docs/volto-statistic-block.gif)
 
 ## Getting started
 
@@ -29,25 +30,25 @@ https://eea.github.io/volto-kitkat-frontend/?path=/story/components-statistic--d
 
 1. Start Volto frontend
 
-* If you already have a volto project, just update `package.json`:
+- If you already have a volto project, just update `package.json`:
 
-   ```JSON
-   "addons": [
-       "@eeacms/volto-statistic-block"
-   ],
+  ```JSON
+  "addons": [
+      "@eeacms/volto-statistic-block"
+  ],
 
-   "dependencies": {
-       "@eeacms/volto-statistic-block": "^1.0.0"
-   }
-   ```
+  "dependencies": {
+      "@eeacms/volto-statistic-block": "^1.0.0"
+  }
+  ```
 
-* If not, create one:
+- If not, create one:
 
-   ```
-   npm install -g yo @plone/generator-volto
-   yo @plone/volto my-volto-project --addon @eeacms/volto-statistic-block
-   cd my-volto-project
-   ```
+  ```
+  npm install -g yo @plone/generator-volto
+  yo @plone/volto my-volto-project --addon @eeacms/volto-statistic-block
+  cd my-volto-project
+  ```
 
 1. Install new add-ons and restart Volto:
 
