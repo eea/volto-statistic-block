@@ -20,7 +20,7 @@
 
 https://eea.github.io/volto-kitkat-frontend/?path=/story/components-statistic--default
 
-![Statistic Block](./docs/volto-statistic-block.gif)
+![Statistic Block](https://raw.githubusercontent.com/eea/volto-statistic-block/master/docs/volto-statistic-block.gif)
 
 ## Getting started
 
