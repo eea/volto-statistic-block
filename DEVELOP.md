@@ -16,11 +16,13 @@
 
 1. Go to http://localhost:3000
 
-1.  Happy hacking!
+1. Initialize git hooks
 
     ```Bash
-    cd src/addons/volto-statistic-block/
+    yarn prepare
     ```
+
+1. Happy hacking!
 
 ### Or add @eeacms/volto-statistic-block to your Volto project
 
