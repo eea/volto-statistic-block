@@ -3,6 +3,10 @@ import stylesSchema from './stylesSchema';
 import { defineMessages } from 'react-intl';
 
 const messages = defineMessages({
+  Statistic: {
+    id: 'Statistic',
+    defaultMessage: 'Statistic',
+  },
   StatisticItem: {
     id: 'Statistic item',
     defaultMessage: 'Statistic item',
@@ -109,7 +113,7 @@ const messages = defineMessages({
   },
 });
 
-const statisticSchema = ({ intl }) => ({
+const statisticSchema = (intl) => ({
   title: intl.formatMessage(messages.StatisticItem),
   fieldsets: [
     {
@@ -139,7 +143,7 @@ const statisticSchema = ({ intl }) => ({
   required: [],
 });
 
-export default {
+export default (intl) => ({
   title: intl.formatMessage(messages.StatisticBlock),
 
   fieldsets: [
@@ -164,7 +168,7 @@ export default {
     horizontal: {
       title: intl.formatMessage(messages.Horizontal),
       description: intl.formatMessage(
-        messages.CanPresentItsMeasurementHorizontally
+        messages.CanPresentItsMeasurementHorizontally,
       ),
       type: 'boolean',
     },
@@ -195,19 +199,19 @@ export default {
     items: {
       title: intl.formatMessage(messages.StatisticItems),
       widget: 'object_list',
-      schema: statisticSchema,
+      schema: statisticSchema(intl),
     },
     animation: {
       widget: 'object',
       title: intl.formatMessage(messages.Animation),
-      schema: animationSchema(),
+      schema: animationSchema(intl),
     },
     styles: {
       widget: 'object',
       title: intl.formatMessage(messages.Styles),
-      schema: stylesSchema(),
+      schema: stylesSchema(intl),
     },
   },
 
   required: [],
-};
+});

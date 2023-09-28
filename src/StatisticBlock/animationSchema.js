@@ -27,7 +27,7 @@ const messages = defineMessages({
   },
 });
 
-export default () => {
+export default (intl) => {
   return {
     fieldsets: [
       {

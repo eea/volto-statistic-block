@@ -11,6 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#: StatisticBlock/View
+# defaultMessage: Add statistic items
+msgid "Add statistic items"
+msgstr ""
+
 #: StatisticBlock/stylesSchema
 # defaultMessage: Align
 msgid "Align"
@@ -148,7 +153,7 @@ msgstr ""
 msgid "Small"
 msgstr ""
 
-#: StatisticBlock/index
+#: StatisticBlock/schema
 # defaultMessage: Statistic
 msgid "Statistic"
 msgstr ""
