@@ -1,0 +1,233 @@
+# Translation of volto.pot to Spanish
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-15 11:45-0400\n"
+"PO-Revision-Date: 2023-06-18 01:34-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language: es\n"
+"Language-Team: ES <LL@li.org>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Preferred-Encodings: utf-8\n"
+"MIME-Version: 1.0\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Domain: volto\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#: StatisticBlock/View
+# defaultMessage: Add statistic items
+msgid "Add statistic items"
+msgstr "Agregar elementos estadísticos"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Align
+msgid "Align"
+msgstr "Alinear"
+
+#: StatisticBlock/schema
+# defaultMessage: Animation
+msgid "Animation"
+msgstr "Animación"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Background when inverted
+msgid "Background when inverted"
+msgstr "Fondo cuando está invertido"
+
+#: StatisticBlock/schema
+# defaultMessage: Can be formatted to fit on a dark background.
+msgid "Can be formatted to fit on a dark background."
+msgstr "Se puede formatear para que quepa en un fondo oscuro."
+
+#: StatisticBlock/schema
+# defaultMessage: Can present its measurement horizontally
+msgid "Can present its measurement horizontally"
+msgstr "Puede presentar su medida horizontalmente"
+
+#: StatisticBlock/schema
+# defaultMessage: Columns
+msgid "Columns"
+msgstr "Columnas"
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Decimals
+msgid "Decimals"
+msgstr "Decimales"
+
+#: StatisticBlock/animationSchema
+#: StatisticBlock/schema
+#: StatisticBlock/stylesSchema
+# defaultMessage: Default
+msgid "Default"
+msgstr "Por defecto"
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Duration (seconds)
+msgid "Duration (seconds)"
+msgstr "Duración (segundos)"
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Enable animation
+msgid "Enable animation"
+msgstr "Habilitar animación"
+
+#: StatisticBlock/schema
+# defaultMessage: Extra info
+msgid "Extra info"
+msgstr "Información extra"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Extra info variation
+msgid "Extra info variation"
+msgstr "Variante de información adicional"
+
+#: StatisticBlock/schema
+# defaultMessage: Four
+msgid "Four"
+msgstr "Cuatro"
+
+#: StatisticBlock/schema
+# defaultMessage: Horizontal
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: StatisticBlock/schema
+# defaultMessage: Huge
+msgid "Huge"
+msgstr "Enorme"
+
+#: StatisticBlock/schema
+# defaultMessage: Inverted
+msgid "Inverted"
+msgstr "Invertido"
+
+#: StatisticBlock/schema
+# defaultMessage: Label
+msgid "Label"
+msgstr "Etiqueta"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Label variation
+msgid "Label variation"
+msgstr "Variación de etiquetas"
+
+#: StatisticBlock/schema
+# defaultMessage: Large
+msgid "Large"
+msgstr "Grande"
+
+#: StatisticBlock/schema
+# defaultMessage: Link
+msgid "Link"
+msgstr "Enlace"
+
+#: StatisticBlock/schema
+# defaultMessage: Mini
+msgid "Mini"
+msgstr "Mini"
+
+#: StatisticBlock/schema
+# defaultMessage: One
+msgid "One"
+msgstr "Uno"
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Prefix
+msgid "Prefix"
+msgstr "Prefijo"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Primary
+msgid "Primary"
+msgstr "Primario"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Secondary
+msgid "Secondary"
+msgstr "Secundario"
+
+#: StatisticBlock/schema
+# defaultMessage: Size
+msgid "Size"
+msgstr "Tamaño"
+
+#: StatisticBlock/schema
+# defaultMessage: Small
+msgid "Small"
+msgstr "Pequeño"
+
+#: StatisticBlock/schema
+# defaultMessage: Statistic
+msgid "Statistic"
+msgstr "Estadística"
+
+#: StatisticBlock/schema
+# defaultMessage: Statistic block
+msgid "Statistic block"
+msgstr "Bloque de estadísticas"
+
+#: StatisticBlock/schema
+# defaultMessage: Statistic item
+msgid "Statistic item"
+msgstr "Elemento de estadística"
+
+#: StatisticBlock/schema
+# defaultMessage: Statistic items
+msgid "Statistic items"
+msgstr "Elementos de estadística"
+
+#: StatisticBlock/schema
+# defaultMessage: Styles
+msgid "Styles"
+msgstr "Estilos"
+
+#: StatisticBlock/schema
+# defaultMessage: Styling
+msgid "Styling"
+msgstr "Estilos"
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Suffix
+msgid "Suffix"
+msgstr "Sufijo"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Tertiary
+msgid "Tertiary"
+msgstr "Terciario"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Text align
+msgid "Text align"
+msgstr "Alineación de texto"
+
+#: StatisticBlock/schema
+# defaultMessage: Three
+msgid "Three"
+msgstr "Tres"
+
+#: StatisticBlock/schema
+# defaultMessage: Tiny
+msgid "Tiny"
+msgstr "Pequeño"
+
+#: StatisticBlock/schema
+# defaultMessage: Two
+msgid "Two"
+msgstr "Dos"
+
+#: StatisticBlock/schema
+# defaultMessage: Value
+msgid "Value"
+msgstr "Valor"
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Value variation
+msgid "Value variation"
+msgstr "Variación del valor"

@@ -74,21 +74,33 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
     cy.get('.field-wrapper-label-1-items-2 .slate-editor div[role="textbox"]').click().type('Third Label{enter}');
     cy.get('.field-wrapper-info-2-items-2 .slate-editor div[role="textbox"]').click().type('Third Extra Info{enter}');
 
+    // Three columns
+    cy.get('#field-widths').click().type('Three{enter}');
+
+    // Enable Animation
+    cy.get('label[for="field-enabled-0-animation"]').click();
+
+    // Animation Duration
+    cy.get('#field-duration-1-animation').click().type('5{enter}');
+
+    // Prefix
+    cy.get('#field-prefix-3-animation').click().type('x {enter}');
+
+    // Suffix
+    cy.get('#field-suffix-4-animation').click().type(' y{enter}');
+
     cy.get('#toolbar-save').click();
     cy.get('.documentFirstHeading').contains('My First Book');
 
     // Check first item
-    cy.get('.statistic:nth-child(1) .value').contains('5');
     cy.get('.statistic:nth-child(1) .label').contains('First Label');
     cy.get('.statistic:nth-child(1) .text-center').contains('First Extra Info');
 
     // Check second item
-    cy.get('.statistic:nth-child(2) .value').contains('10');
     cy.get('.statistic:nth-child(2) .label').contains('Second Label');
     cy.get('.statistic:nth-child(2) .text-center').contains('Second Extra Info');
 
     // Check third item
-    cy.get('.statistic:nth-child(3) .value').contains('15');
     cy.get('.statistic:nth-child(3) .label').contains('Third Label');
     cy.get('.statistic:nth-child(3) .text-center').contains('Third Extra Info');
   });

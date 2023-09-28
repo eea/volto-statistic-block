@@ -1,12 +1,15 @@
 import React from 'react';
-import { SidebarPortal, BlockDataForm } from '@plone/volto/components';
+import { BlockDataForm, SidebarPortal } from '@plone/volto/components';
+import { useIntl } from 'react-intl';
 import View from './View';
-import schema from './schema';
+import { default as editSchema } from './schema';
 
 import './styles.less';
 
 const Edit = (props) => {
   const { data = {}, block = null, selected = false, onChangeBlock } = props;
+  const intl = useIntl();
+  const schema = editSchema(intl);
 
   return (
     <>

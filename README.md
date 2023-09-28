@@ -14,13 +14,20 @@
 [![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-develop&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-develop)
 [![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-develop)
 
-[Volto](https://github.com/plone/volto) add-on
+[Volto](https://github.com/plone/volto) add-on that provides the React Semantic UI [Statistic](https://react.semantic-ui.com/views/statistic) component as a [Block](https://6.docs.plone.org/volto/blocks/)
 
 ## Features
 
-https://eea.github.io/volto-kitkat-frontend/?path=/story/components-statistic--default
+See [Statistic Component Storybook](https://eea.github.io/eea-storybook/?path=/story/components-statistic--default).
 
-![Statistic Block](https://raw.githubusercontent.com/eea/volto-statistic-block/master/docs/volto-statistic-block.gif)
+### Demo (Volto Theme)
+
+
+![Statistic Block](https://raw.githubusercontent.com/eea/volto-statistic-block/master/docs/docs/volto-statistic-block.gif)
+
+### Demo (EEA Theme)
+
+![Statistic Block](https://raw.githubusercontent.com/eea/volto-statistic-block/master/docs/eea-statistic-block.gif)
 
 ## Getting started
 
@@ -51,7 +58,7 @@ Go to http://localhost:3000
   ],
 
   "dependencies": {
-      "@eeacms/volto-statistic-block": "^1.0.0"
+      "@eeacms/volto-statistic-block": "*"
   }
   ```
 
