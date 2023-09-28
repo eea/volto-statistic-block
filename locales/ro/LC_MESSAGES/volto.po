@@ -11,4 +11,209 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#: StatisticBlock/stylesSchema
+# defaultMessage: Align
+msgid "Align"
+msgstr ""
 
+#: StatisticBlock/schema
+# defaultMessage: Animation
+msgid "Animation"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Background when inverted
+msgid "Background when inverted"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Can be formatted to fit on a dark background.
+msgid "Can be formatted to fit on a dark background."
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Can present its measurement horizontally
+msgid "Can present its measurement horizontally"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Columns
+msgid "Columns"
+msgstr ""
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Decimals
+msgid "Decimals"
+msgstr ""
+
+#: StatisticBlock/animationSchema
+#: StatisticBlock/schema
+#: StatisticBlock/stylesSchema
+# defaultMessage: Default
+msgid "Default"
+msgstr ""
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Duration (seconds)
+msgid "Duration (seconds)"
+msgstr ""
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Enable animation
+msgid "Enable animation"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Extra info
+msgid "Extra info"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Extra info variation
+msgid "Extra info variation"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Four
+msgid "Four"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Horizontal
+msgid "Horizontal"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Huge
+msgid "Huge"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Inverted
+msgid "Inverted"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Label
+msgid "Label"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Label variation
+msgid "Label variation"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Large
+msgid "Large"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Link
+msgid "Link"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Mini
+msgid "Mini"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: One
+msgid "One"
+msgstr ""
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Prefix
+msgid "Prefix"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Primary
+msgid "Primary"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Secondary
+msgid "Secondary"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Size
+msgid "Size"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Small
+msgid "Small"
+msgstr ""
+
+#: StatisticBlock/index
+# defaultMessage: Statistic
+msgid "Statistic"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Statistic block
+msgid "Statistic block"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Statistic item
+msgid "Statistic item"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Statistic items
+msgid "Statistic items"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Styles
+msgid "Styles"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Styling
+msgid "Styling"
+msgstr ""
+
+#: StatisticBlock/animationSchema
+# defaultMessage: Suffix
+msgid "Suffix"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Tertiary
+msgid "Tertiary"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Text align
+msgid "Text align"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Three
+msgid "Three"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Tiny
+msgid "Tiny"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Two
+msgid "Two"
+msgstr ""
+
+#: StatisticBlock/schema
+# defaultMessage: Value
+msgid "Value"
+msgstr ""
+
+#: StatisticBlock/stylesSchema
+# defaultMessage: Value variation
+msgid "Value variation"
+msgstr ""
