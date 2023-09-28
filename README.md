@@ -23,7 +23,7 @@ See [Statistic Component Storybook](https://eea.github.io/eea-storybook/?path=/s
 ### Demo (Volto Theme)
 
 
-![Statistic Block](https://raw.githubusercontent.com/eea/volto-statistic-block/master/docs/docs/volto-statistic-block.gif)
+![Statistic Block](https://raw.githubusercontent.com/eea/volto-statistic-block/master/docs/volto-statistic-block.gif)
 
 ### Demo (EEA Theme)
 
