@@ -2,6 +2,7 @@ import React from 'react';
 import isNumber from 'lodash/isNumber';
 import isNaN from 'lodash/isNaN';
 import cx from 'classnames';
+import { FormattedMessage } from 'react-intl';
 import { CountUp } from '@eeacms/countup';
 import { Statistic } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
@@ -35,7 +36,15 @@ const View = ({ data, mode }) => {
     extraVariation = 'tertiary',
   } = styles;
 
-  if (!items.length && mode === 'edit') return <p>Add statistic items</p>;
+  if (!items.length && mode === 'edit')
+    return (
+      <p>
+        <FormattedMessage
+          id="Add statistic items"
+          defaultMessage="Add statistic items"
+        />
+      </p>
+    );
   return (
     <div
       className={cx({
