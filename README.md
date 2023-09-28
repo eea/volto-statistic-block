@@ -18,7 +18,7 @@
 
 ## Features
 
-https://eea.github.io/volto-kitkat-frontend/?path=/story/components-statistic--default
+- [Statistic Component Storybook](https://eea.github.io/eea-storybook/?path=/story/components-statistic--default).
 
 ![Statistic Block](https://raw.githubusercontent.com/eea/volto-statistic-block/master/docs/volto-statistic-block.gif)
 

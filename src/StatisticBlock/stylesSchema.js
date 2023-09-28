@@ -1,9 +1,54 @@
+import { defineMessages } from 'react-intl';
+
+const messages = defineMessages({
+  Default: {
+    id: 'Default',
+    defaultMessage: 'Default',
+  },
+  Align: {
+    id: 'Align',
+    defaultMessage: 'Align',
+  },
+  TextAlign: {
+    id: 'Text align',
+    defaultMessage: 'Text align',
+  },
+  BackgroundWhenInverted: {
+    id: 'Background when inverted',
+    defaultMessage: 'Background when inverted',
+  },
+  ValueVariation: {
+    id: 'Value variation',
+    defaultMessage: 'Value variation',
+  },
+  LabelVariation: {
+    id: 'Label variation',
+    defaultMessage: 'Label variation',
+  },
+  ExtraInfoVariation: {
+    id: 'Extra info variation',
+    defaultMessage: 'Extra info variation',
+  },
+  Primary: {
+    id: 'Primary',
+    defaultMessage: 'Primary',
+  },
+  Secondary: {
+    id: 'Secondary',
+    defaultMessage: 'Secondary',
+  },
+  Tertiary: {
+    id: 'Tertiary',
+    defaultMessage: 'Tertiary',
+  },
+});
+
 export default () => {
   return {
     fieldsets: [
       {
         id: 'default',
-        title: 'Default',
+        title: intl.formatMessage(messages.Default),
         fields: [
           'align',
           'textAlign',
@@ -18,47 +63,47 @@ export default () => {
     properties: {
       align: {
         widget: 'align',
-        title: 'Align',
+        title: intl.formatMessage(messages.Align),
         actions: ['center', 'wide', 'full'],
       },
       textAlign: {
-        title: 'Text align',
+        title: intl.formatMessage(messages.TextAlign),
         widget: 'style_text_align',
         default: 'center',
       },
       backgroundInverted: {
-        title: 'Background when inverted',
+        title: intl.formatMessage(messages.BackgroundWhenInverted),
         choices: [
-          ['primary', 'Primary'],
-          ['secondary', 'Secondary'],
-          ['tertiary', 'Tertiary'],
+          ['primary', intl.formatMessage(messages.Primary)],
+          ['secondary', intl.formatMessage(messages.Secondary)],
+          ['tertiary', intl.formatMessage(messages.Tertiary)],
         ],
         defaultValue: 'primary',
       },
       valueVariation: {
-        title: 'Value variation',
+        title: intl.formatMessage(messages.ValueVariation),
         choices: [
-          ['primary', 'Primary'],
-          ['secondary', 'Secondary'],
-          ['tertiary', 'Tertiary'],
+          ['primary', intl.formatMessage(messages.Primary)],
+          ['secondary', intl.formatMessage(messages.Secondary)],
+          ['tertiary', intl.formatMessage(messages.Tertiary)],
         ],
         defaultValue: 'secondary',
       },
       labelVariation: {
-        title: 'Label variation',
+        title: intl.formatMessage(messages.LabelVariation),
         choices: [
-          ['primary', 'Primary'],
-          ['secondary', 'Secondary'],
-          ['tertiary', 'Tertiary'],
+          ['primary', intl.formatMessage(messages.Primary)],
+          ['secondary', intl.formatMessage(messages.Secondary)],
+          ['tertiary', intl.formatMessage(messages.Tertiary)],
         ],
         defaultValue: 'tertiary',
       },
       extraVariation: {
-        title: 'Extra info variation',
+        title: intl.formatMessage(messages.ExtraInfoVariation),
         choices: [
-          ['primary', 'Primary'],
-          ['secondary', 'Secondary'],
-          ['tertiary', 'Tertiary'],
+          ['primary', intl.formatMessage(messages.Primary)],
+          ['secondary', intl.formatMessage(messages.Secondary)],
+          ['tertiary', intl.formatMessage(messages.Tertiary)],
         ],
         defaultValue: 'tertiary',
       },
