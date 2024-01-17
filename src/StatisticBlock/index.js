@@ -20,5 +20,13 @@ export default (config) => {
     },
     editSchema,
   };
+  config.settings.blocksWithFootnotesSupport = {
+    ...(config.settings.blocksWithFootnotesSupport || {}),
+    statistic_block: [
+      { items: 'info' },
+      { items: 'value' },
+      { items: 'label' },
+    ],
+  };
   return config;
 };
