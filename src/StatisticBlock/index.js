@@ -3,6 +3,7 @@ import StatisticBlockEdit from './Edit';
 import StatisticBlockView from './View';
 import editSchema from './schema';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (config) => {
   config.blocks.blocksConfig.statistic_block = {
     id: 'statistic_block',

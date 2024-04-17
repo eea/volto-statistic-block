@@ -143,6 +143,7 @@ const statisticSchema = (intl) => ({
   required: [],
 });
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (intl) => ({
   title: intl.formatMessage(messages.StatisticBlock),
 
