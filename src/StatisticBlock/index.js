@@ -3,7 +3,7 @@ import StatisticBlockEdit from './Edit';
 import StatisticBlockView from './View';
 import editSchema from './schema';
 
-export default (config) => {
+const applyConfig = (config) => {
   config.blocks.blocksConfig.statistic_block = {
     id: 'statistic_block',
     title: 'Statistic',
@@ -30,3 +30,5 @@ export default (config) => {
   };
   return config;
 };
+
+export default applyConfig;

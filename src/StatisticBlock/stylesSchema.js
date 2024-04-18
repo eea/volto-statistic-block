@@ -43,7 +43,7 @@ const messages = defineMessages({
   },
 });
 
-export default (intl) => {
+const schema = (intl) => {
   return {
     fieldsets: [
       {
@@ -112,3 +112,5 @@ export default (intl) => {
     required: [],
   };
 };
+
+export default schema;

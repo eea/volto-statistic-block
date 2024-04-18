@@ -143,7 +143,7 @@ const statisticSchema = (intl) => ({
   required: [],
 });
 
-export default (intl) => ({
+const schema = (intl) => ({
   title: intl.formatMessage(messages.StatisticBlock),
 
   fieldsets: [
@@ -215,3 +215,5 @@ export default (intl) => ({
 
   required: [],
 });
+
+export default schema;
