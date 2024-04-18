@@ -27,8 +27,7 @@ const messages = defineMessages({
   },
 });
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default (intl) => {
+const schema = (intl) => {
   return {
     fieldsets: [
       {
@@ -64,3 +63,5 @@ export default (intl) => {
     required: [],
   };
 };
+
+export default schema;

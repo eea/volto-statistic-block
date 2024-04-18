@@ -143,8 +143,7 @@ const statisticSchema = (intl) => ({
   required: [],
 });
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default (intl) => ({
+const schema = (intl) => ({
   title: intl.formatMessage(messages.StatisticBlock),
 
   fieldsets: [
@@ -216,3 +215,5 @@ export default (intl) => ({
 
   required: [],
 });
+
+export default schema;
