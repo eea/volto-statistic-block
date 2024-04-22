@@ -6,10 +6,6 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
 
   it('Edit Blocks Layout for Book', () => {
     cy.visit('/controlpanel/dexterity-types');
-    cy.waitForResourceToLoad('@navigation');
-    cy.waitForResourceToLoad('@breadcrumbs');
-    cy.waitForResourceToLoad('@actions');
-    cy.waitForResourceToLoad('@types');
 
     cy.get('a[href="/controlpanel/dexterity-types/book"]').should(
       'have.text',
@@ -40,10 +36,6 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
     cy.get('#toolbar-save').click();
 
     cy.visit('/cypress');
-    cy.waitForResourceToLoad('@navigation');
-    cy.waitForResourceToLoad('@breadcrumbs');
-    cy.waitForResourceToLoad('@actions');
-    cy.waitForResourceToLoad('@types');
 
     cy.get('button[class="add"]').click();
     cy.get('#toolbar-add-book').click();
@@ -58,21 +50,39 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
     cy.get('.add-item-button-wrapper .button').click();
 
     // Add first item
-    cy.get('.field-wrapper-value-0-items-0 .slate-editor div[role="textbox"]').click().type('5{enter}');
-    cy.get('.field-wrapper-label-1-items-0 .slate-editor div[role="textbox"]').click().type('First Label{enter}');
-    cy.get('.field-wrapper-info-2-items-0 .slate-editor div[role="textbox"]').click().type('First Extra Info{enter}');
+    cy.get('.field-wrapper-value-0-items-0 .slate-editor div[role="textbox"]')
+      .click()
+      .type('5{enter}');
+    cy.get('.field-wrapper-label-1-items-0 .slate-editor div[role="textbox"]')
+      .click()
+      .type('First Label{enter}');
+    cy.get('.field-wrapper-info-2-items-0 .slate-editor div[role="textbox"]')
+      .click()
+      .type('First Extra Info{enter}');
 
     // Add second item
     cy.get('.add-item-button-wrapper .button').click();
-    cy.get('.field-wrapper-value-0-items-1 .slate-editor div[role="textbox"]').click().type('10{enter}');
-    cy.get('.field-wrapper-label-1-items-1 .slate-editor div[role="textbox"]').click().type('Second Label{enter}');
-    cy.get('.field-wrapper-info-2-items-1 .slate-editor div[role="textbox"]').click().type('Second Extra Info{enter}');
+    cy.get('.field-wrapper-value-0-items-1 .slate-editor div[role="textbox"]')
+      .click()
+      .type('10{enter}');
+    cy.get('.field-wrapper-label-1-items-1 .slate-editor div[role="textbox"]')
+      .click()
+      .type('Second Label{enter}');
+    cy.get('.field-wrapper-info-2-items-1 .slate-editor div[role="textbox"]')
+      .click()
+      .type('Second Extra Info{enter}');
 
     // Add third item
     cy.get('.add-item-button-wrapper .button').click();
-    cy.get('.field-wrapper-value-0-items-2 .slate-editor div[role="textbox"]').click().type('15{enter}');
-    cy.get('.field-wrapper-label-1-items-2 .slate-editor div[role="textbox"]').click().type('Third Label{enter}');
-    cy.get('.field-wrapper-info-2-items-2 .slate-editor div[role="textbox"]').click().type('Third Extra Info{enter}');
+    cy.get('.field-wrapper-value-0-items-2 .slate-editor div[role="textbox"]')
+      .click()
+      .type('15{enter}');
+    cy.get('.field-wrapper-label-1-items-2 .slate-editor div[role="textbox"]')
+      .click()
+      .type('Third Label{enter}');
+    cy.get('.field-wrapper-info-2-items-2 .slate-editor div[role="textbox"]')
+      .click()
+      .type('Third Extra Info{enter}');
 
     // Three columns
     cy.get('#field-widths').click().type('Three{enter}');
@@ -98,7 +108,9 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
 
     // Check second item
     cy.get('.statistic:nth-child(2) .label').contains('Second Label');
-    cy.get('.statistic:nth-child(2) .text-center').contains('Second Extra Info');
+    cy.get('.statistic:nth-child(2) .text-center').contains(
+      'Second Extra Info',
+    );
 
     // Check third item
     cy.get('.statistic:nth-child(3) .label').contains('Third Label');
