@@ -181,7 +181,7 @@ msgstr ""
 #: StatisticBlock/schema
 # defaultMessage: Styling
 msgid "Styling"
-msgstr ""
+msgstr "Gestaltung"
 
 #: StatisticBlock/animationSchema
 # defaultMessage: Suffix
