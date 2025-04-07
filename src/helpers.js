@@ -1,3 +1,4 @@
+import { cloneElement, isValidElement, Children } from 'react';
 import { Node } from 'slate';
 import isArray from 'lodash/isArray';
 import isObject from 'lodash/isObject';
@@ -41,4 +42,34 @@ export const getFieldURL = (data) => {
   }
   if (isString(url) && isInternalURL(url)) return flattenToAppURL(url);
   return url;
+};
+
+export const enhanceElementWithProps = (children, extraProps = {}) => {
+  const addPropsDeep = (element) => {
+    if (!isValidElement(element)) {
+      return element;
+    }
+
+    const newElement = cloneElement(
+      element,
+      element.props?.element?.type === 'dataentity'
+        ? {
+            extras: {
+              ...element.props.extras,
+              ...extraProps,
+            },
+          }
+        : element.props,
+      element.props.children
+        ? Children.map(element.props.children, (child) => addPropsDeep(child))
+        : element.props.children,
+    );
+
+    return newElement;
+  };
+
+  const enhancedChildren = Children.map(children, (child) => {
+    return addPropsDeep(child);
+  });
+  return enhancedChildren;
 };
