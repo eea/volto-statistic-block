@@ -59,9 +59,6 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
     cy.get('.field-wrapper-info-2-items-0 .slate-editor div[role="textbox"]')
       .click()
       .type('First Extra Info{enter}');
-    cy.get('.field-wrapper-suffix-5-items-0 input[name="suffix-5-items-0"]')
-      .click()
-      .type('Suffix');
 
     // Add second item
     cy.get('.add-item-button-wrapper .button').click();
