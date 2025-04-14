@@ -121,43 +121,52 @@ const messages = defineMessages({
   },
 });
 
-const statisticSchema = (intl) => ({
-  title: intl.formatMessage(messages.StatisticItem),
-  fieldsets: [
-    {
-      id: 'default',
-      title: intl.formatMessage(messages.Default),
-      fields: ['value', 'label', 'info', 'href', 'prefix', 'suffix'],
+const statisticSchema = ({ data, intl }) => {
+  const { animation = {} } = data;
+  return {
+    title: intl.formatMessage(messages.StatisticItem),
+    fieldsets: [
+      {
+        id: 'default',
+        title: intl.formatMessage(messages.Default),
+        fields: [
+          'value',
+          'label',
+          'info',
+          'href',
+          ...(animation?.enabled ? ['prefix', 'suffix'] : []),
+        ],
+      },
+    ],
+    properties: {
+      value: {
+        title: intl.formatMessage(messages.Value),
+        widget: 'slate_richtext',
+      },
+      label: {
+        title: intl.formatMessage(messages.Label),
+        widget: 'slate_richtext',
+      },
+      info: {
+        title: intl.formatMessage(messages.ExtraInfo),
+        widget: 'slate_richtext',
+      },
+      href: {
+        title: intl.formatMessage(messages.Link),
+        widget: 'url',
+      },
+      prefix: {
+        title: intl.formatMessage(messages.Prefix),
+      },
+      suffix: {
+        title: intl.formatMessage(messages.Suffix),
+      },
     },
-  ],
-  properties: {
-    value: {
-      title: intl.formatMessage(messages.Value),
-      widget: 'slate_richtext',
-    },
-    label: {
-      title: intl.formatMessage(messages.Label),
-      widget: 'slate_richtext',
-    },
-    info: {
-      title: intl.formatMessage(messages.ExtraInfo),
-      widget: 'slate_richtext',
-    },
-    href: {
-      title: intl.formatMessage(messages.Link),
-      widget: 'url',
-    },
-    prefix: {
-      title: intl.formatMessage(messages.Prefix),
-    },
-    suffix: {
-      title: intl.formatMessage(messages.Suffix),
-    },
-  },
-  required: [],
-});
+    required: [],
+  };
+};
 
-const schema = (intl) => ({
+const schema = ({ data, intl }) => ({
   title: intl.formatMessage(messages.StatisticBlock),
 
   fieldsets: [
@@ -213,7 +222,7 @@ const schema = (intl) => ({
     items: {
       title: intl.formatMessage(messages.StatisticItems),
       widget: 'object_list',
-      schema: statisticSchema(intl),
+      schema: statisticSchema({ data, intl }),
     },
     animation: {
       widget: 'object',

@@ -40,7 +40,11 @@ const StatisticItem = memo(
       (value) => {
         let prefix = item.prefix ? item.prefix : animation?.prefix || '';
         let suffix = item.suffix ? item.suffix : animation?.suffix || '';
-        return prefix + value.toFixed(animation.decimals) + suffix;
+        return (
+          prefix +
+          parseInt(value.toFixed(animation.decimals)).toLocaleString() +
+          suffix
+        );
       },
       [item.prefix, item.suffix, animation],
     );

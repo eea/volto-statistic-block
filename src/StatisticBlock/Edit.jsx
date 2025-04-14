@@ -9,7 +9,7 @@ import './styles.less';
 const Edit = (props) => {
   const { data = {}, block = null, selected = false, onChangeBlock } = props;
   const intl = useIntl();
-  const schema = editSchema(intl);
+  const schema = editSchema({ data, intl });
 
   return (
     <>
