@@ -42,7 +42,7 @@ const StatisticItem = memo(
         let suffix = item.suffix || '';
         return prefix + value.toFixed(animation.decimals) + suffix;
       },
-      [item.prefix, item.suffix],
+      [item.prefix, item.suffix, animation.decimals],
     );
 
     const renderNodes = (nodes) => {
