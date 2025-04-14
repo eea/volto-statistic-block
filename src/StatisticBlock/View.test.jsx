@@ -26,6 +26,7 @@ jest.mock('@eeacms/volto-statistic-block/helpers', () => ({
   getFieldURL: jest.fn((href) => href),
   serializeToNodes: jest.fn((text) => [{ text }]),
   serializeNodes: jest.fn((text) => text || ''),
+  enhanceElementWithProps: jest.fn((children) => children),
 }));
 
 describe('Statistic View Component', () => {

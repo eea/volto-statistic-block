@@ -59,6 +59,9 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
     cy.get('.field-wrapper-info-2-items-0 .slate-editor div[role="textbox"]')
       .click()
       .type('First Extra Info{enter}');
+    cy.get('.field-wrapper-suffix-5-items-0 input[name="suffix-5-items-0"]')
+      .click()
+      .type('Suffix');
 
     // Add second item
     cy.get('.add-item-button-wrapper .button').click();
@@ -92,12 +95,6 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
 
     // Animation Duration
     cy.get('#field-duration-1-animation').click().type('5{enter}');
-
-    // Prefix
-    cy.get('#field-prefix-3-animation').click().type('x {enter}');
-
-    // Suffix
-    cy.get('#field-suffix-4-animation').click().type(' y{enter}');
 
     cy.get('#toolbar-save').click();
     cy.get('.documentFirstHeading').contains('My First Book');
