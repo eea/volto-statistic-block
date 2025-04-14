@@ -111,6 +111,14 @@ const messages = defineMessages({
     id: 'Styles',
     defaultMessage: 'Styles',
   },
+  Prefix: {
+    id: 'Prefix',
+    defaultMessage: 'Prefix',
+  },
+  Suffix: {
+    id: 'Suffix',
+    defaultMessage: 'Suffix',
+  },
 });
 
 const statisticSchema = (intl) => ({
@@ -119,7 +127,7 @@ const statisticSchema = (intl) => ({
     {
       id: 'default',
       title: intl.formatMessage(messages.Default),
-      fields: ['value', 'label', 'info', 'href'],
+      fields: ['value', 'label', 'info', 'href', 'prefix', 'suffix'],
     },
   ],
   properties: {
@@ -138,6 +146,12 @@ const statisticSchema = (intl) => ({
     href: {
       title: intl.formatMessage(messages.Link),
       widget: 'url',
+    },
+    prefix: {
+      title: intl.formatMessage(messages.Prefix),
+    },
+    suffix: {
+      title: intl.formatMessage(messages.Suffix),
     },
   },
   required: [],

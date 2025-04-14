@@ -32,11 +32,30 @@ const StatisticItem = memo(
     labelVariation,
     extraVariation,
     animation,
-    formatter,
-    renderNodes,
   }) => {
     const href = mode !== 'edit' ? getFieldURL(item.href) : '#';
     const StatisticWrapper = href && href !== '#' ? UniversalLink : Statistic;
+
+    const formatter = useCallback(
+      (value) => {
+        let prefix = item.prefix || '';
+        let suffix = item.suffix || '';
+        return prefix + value.toFixed(animation.decimals) + suffix;
+      },
+      [item.prefix, item.suffix],
+    );
+
+    const renderNodes = (nodes) => {
+      const element = _serializeNodes(nodes);
+      const enhancedChildren = enhanceElementWithProps(element, {
+        animation: {
+          ...animation,
+          formatter,
+        },
+      });
+
+      return enhancedChildren;
+    };
 
     const valueNodes = useMemo(
       () => serializeToNodes(item.value),
@@ -105,30 +124,6 @@ const View = memo(({ data, mode }) => {
     extraVariation = 'tertiary',
   } = styles;
 
-  const formatter = useCallback(
-    (value) => {
-      let prefix = animation.prefix || '';
-      let suffix = animation.suffix || '';
-      return prefix + value.toFixed(animation.decimals) + suffix;
-    },
-    [animation],
-  );
-
-  const renderNodes = useCallback(
-    (nodes) => {
-      const element = _serializeNodes(nodes);
-      const enhancedChildren = enhanceElementWithProps(element, {
-        animation: {
-          ...animation,
-          formatter,
-        },
-      });
-
-      return enhancedChildren;
-    },
-    [animation, formatter],
-  );
-
   if (!items.length && mode === 'edit')
     return (
       <p>
@@ -155,20 +150,18 @@ const View = memo(({ data, mode }) => {
         extravariation={extraVariation}
         className={cx(textAlign, { 'ui container': styles.align === 'full' })}
       >
-        {items.map((item, index) => (
-          <StatisticItem
-            key={item['@id']}
-            item={item}
-            mode={mode}
-            textAlign={textAlign}
-            valueVariation={valueVariation}
-            labelVariation={labelVariation}
-            extraVariation={extraVariation}
-            animation={animation}
-            formatter={formatter}
-            renderNodes={renderNodes}
-          />
-        ))}
+        {items.map((item) => {
+          const itemData = {
+            item,
+            mode,
+            textAlign,
+            valueVariation,
+            labelVariation,
+            extraVariation,
+            animation,
+          };
+          return <StatisticItem key={item['@id']} {...itemData} />;
+        })}
       </Statistic.Group>
     </div>
   );

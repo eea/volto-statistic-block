@@ -17,14 +17,6 @@ const messages = defineMessages({
     id: 'Decimals',
     defaultMessage: 'Decimals',
   },
-  Prefix: {
-    id: 'Prefix',
-    defaultMessage: 'Prefix',
-  },
-  Suffix: {
-    id: 'Suffix',
-    defaultMessage: 'Suffix',
-  },
 });
 
 const schema = (intl) => {
@@ -33,7 +25,7 @@ const schema = (intl) => {
       {
         id: 'default',
         title: intl.formatMessage(messages.Default),
-        fields: ['enabled', 'duration', 'decimals', 'prefix', 'suffix'],
+        fields: ['enabled', 'duration', 'decimals'],
       },
     ],
 
@@ -51,12 +43,6 @@ const schema = (intl) => {
         title: intl.formatMessage(messages.Decimals),
         type: 'number',
         minimum: 0,
-      },
-      prefix: {
-        title: intl.formatMessage(messages.Prefix),
-      },
-      suffix: {
-        title: intl.formatMessage(messages.Suffix),
       },
     },
 
