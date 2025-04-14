@@ -38,8 +38,8 @@ const StatisticItem = memo(
 
     const formatter = useCallback(
       (value) => {
-        let prefix = item.prefix || '';
-        let suffix = item.suffix || '';
+        let prefix = item.prefix ? item.prefix : animation?.prefix || '';
+        let suffix = item.suffix ? item.suffix : animation?.suffix || '';
         return prefix + value.toFixed(animation.decimals) + suffix;
       },
       [item.prefix, item.suffix, animation.decimals],
