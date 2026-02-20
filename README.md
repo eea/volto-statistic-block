@@ -3,16 +3,16 @@
 [![Releases](https://img.shields.io/github/v/release/eea/volto-statistic-block)](https://github.com/eea/volto-statistic-block/releases)
 
 [![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto-addons%2Fvolto-statistic-block%2Fmaster&subject=master)](https://ci.eionet.europa.eu/view/Github/job/volto-addons/job/volto-statistic-block/job/master/display/redirect)
-[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-master&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-master)
-[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-master&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-master)
-[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-master&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-master)
-[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-master&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-master)
+[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block)
+[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block)
+[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block)
+[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block)
 
 [![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto-addons%2Fvolto-statistic-block%2Fdevelop&subject=develop)](https://ci.eionet.europa.eu/view/Github/job/volto-addons/job/volto-statistic-block/job/develop/display/redirect)
-[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-develop&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-develop)
-[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-develop&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-develop)
-[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-develop&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-develop)
-[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block-develop)
+[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block&branch=develop&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block&branch=develop)
+[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block&branch=develop&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block&branch=develop)
+[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block&branch=develop&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block&branch=develop)
+[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-statistic-block&branch=develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-statistic-block&branch=develop)
 
 [Volto](https://github.com/plone/volto) add-on that provides the React Semantic UI [Statistic](https://react.semantic-ui.com/views/statistic) component as a [Block](https://6.docs.plone.org/volto/blocks/)
 
