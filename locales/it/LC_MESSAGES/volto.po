@@ -11,214 +11,214 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. Default: "Add statistic items"
 #: StatisticBlock/View
-# defaultMessage: Add statistic items
 msgid "Add statistic items"
 msgstr ""
 
+#. Default: "Align"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Align
 msgid "Align"
 msgstr ""
 
+#. Default: "Animation"
 #: StatisticBlock/schema
-# defaultMessage: Animation
 msgid "Animation"
 msgstr ""
 
+#. Default: "Background when inverted"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Background when inverted
 msgid "Background when inverted"
 msgstr ""
 
+#. Default: "Can be formatted to fit on a dark background."
 #: StatisticBlock/schema
-# defaultMessage: Can be formatted to fit on a dark background.
 msgid "Can be formatted to fit on a dark background."
 msgstr ""
 
+#. Default: "Can present its measurement horizontally"
 #: StatisticBlock/schema
-# defaultMessage: Can present its measurement horizontally
 msgid "Can present its measurement horizontally"
 msgstr ""
 
+#. Default: "Columns"
 #: StatisticBlock/schema
-# defaultMessage: Columns
 msgid "Columns"
 msgstr ""
 
+#. Default: "Decimals"
 #: StatisticBlock/animationSchema
-# defaultMessage: Decimals
 msgid "Decimals"
 msgstr ""
 
+#. Default: "Default"
 #: StatisticBlock/animationSchema
 #: StatisticBlock/schema
 #: StatisticBlock/stylesSchema
-# defaultMessage: Default
 msgid "Default"
 msgstr ""
 
+#. Default: "Duration (seconds)"
 #: StatisticBlock/animationSchema
-# defaultMessage: Duration (seconds)
 msgid "Duration (seconds)"
 msgstr ""
 
+#. Default: "Enable animation"
 #: StatisticBlock/animationSchema
-# defaultMessage: Enable animation
 msgid "Enable animation"
 msgstr ""
 
+#. Default: "Extra info"
 #: StatisticBlock/schema
-# defaultMessage: Extra info
 msgid "Extra info"
 msgstr ""
 
+#. Default: "Extra info variation"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Extra info variation
 msgid "Extra info variation"
 msgstr ""
 
+#. Default: "Four"
 #: StatisticBlock/schema
-# defaultMessage: Four
 msgid "Four"
 msgstr ""
 
+#. Default: "Horizontal"
 #: StatisticBlock/schema
-# defaultMessage: Horizontal
 msgid "Horizontal"
 msgstr ""
 
+#. Default: "Huge"
 #: StatisticBlock/schema
-# defaultMessage: Huge
 msgid "Huge"
 msgstr ""
 
+#. Default: "Inverted"
 #: StatisticBlock/schema
-# defaultMessage: Inverted
 msgid "Inverted"
 msgstr ""
 
+#. Default: "Label"
 #: StatisticBlock/schema
-# defaultMessage: Label
 msgid "Label"
 msgstr ""
 
+#. Default: "Label variation"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Label variation
 msgid "Label variation"
 msgstr ""
 
+#. Default: "Large"
 #: StatisticBlock/schema
-# defaultMessage: Large
 msgid "Large"
 msgstr ""
 
+#. Default: "Link"
 #: StatisticBlock/schema
-# defaultMessage: Link
 msgid "Link"
 msgstr ""
 
+#. Default: "Mini"
 #: StatisticBlock/schema
-# defaultMessage: Mini
 msgid "Mini"
 msgstr ""
 
+#. Default: "One"
 #: StatisticBlock/schema
-# defaultMessage: One
 msgid "One"
 msgstr ""
 
-#: StatisticBlock/animationSchema
-# defaultMessage: Prefix
+#. Default: "Prefix"
+#: StatisticBlock/schema
 msgid "Prefix"
 msgstr ""
 
+#. Default: "Primary"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Primary
 msgid "Primary"
 msgstr ""
 
+#. Default: "Secondary"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Secondary
 msgid "Secondary"
 msgstr ""
 
+#. Default: "Size"
 #: StatisticBlock/schema
-# defaultMessage: Size
 msgid "Size"
 msgstr ""
 
+#. Default: "Small"
 #: StatisticBlock/schema
-# defaultMessage: Small
 msgid "Small"
 msgstr ""
 
+#. Default: "Statistic"
 #: StatisticBlock/schema
-# defaultMessage: Statistic
 msgid "Statistic"
 msgstr ""
 
+#. Default: "Statistic block"
 #: StatisticBlock/schema
-# defaultMessage: Statistic block
 msgid "Statistic block"
 msgstr ""
 
+#. Default: "Statistic item"
 #: StatisticBlock/schema
-# defaultMessage: Statistic item
 msgid "Statistic item"
 msgstr ""
 
+#. Default: "Statistic items"
 #: StatisticBlock/schema
-# defaultMessage: Statistic items
 msgid "Statistic items"
 msgstr ""
 
+#. Default: "Styles"
 #: StatisticBlock/schema
-# defaultMessage: Styles
 msgid "Styles"
 msgstr ""
 
+#. Default: "Styling"
 #: StatisticBlock/schema
-# defaultMessage: Styling
 msgid "Styling"
 msgstr ""
 
-#: StatisticBlock/animationSchema
-# defaultMessage: Suffix
+#. Default: "Suffix"
+#: StatisticBlock/schema
 msgid "Suffix"
 msgstr ""
 
+#. Default: "Tertiary"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Tertiary
 msgid "Tertiary"
 msgstr ""
 
+#. Default: "Text align"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Text align
 msgid "Text align"
 msgstr ""
 
+#. Default: "Three"
 #: StatisticBlock/schema
-# defaultMessage: Three
 msgid "Three"
 msgstr ""
 
+#. Default: "Tiny"
 #: StatisticBlock/schema
-# defaultMessage: Tiny
 msgid "Tiny"
 msgstr ""
 
+#. Default: "Two"
 #: StatisticBlock/schema
-# defaultMessage: Two
 msgid "Two"
 msgstr ""
 
+#. Default: "Value"
 #: StatisticBlock/schema
-# defaultMessage: Value
 msgid "Value"
 msgstr ""
 
+#. Default: "Value variation"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Value variation
 msgid "Value variation"
 msgstr ""

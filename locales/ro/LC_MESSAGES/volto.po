@@ -11,214 +11,214 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. Default: "Add statistic items"
 #: StatisticBlock/View
-# defaultMessage: Add statistic items
 msgid "Add statistic items"
 msgstr "Adaugă elemente statistică în panoul lateral"
 
+#. Default: "Align"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Align
 msgid "Align"
 msgstr "Aliniere"
 
+#. Default: "Animation"
 #: StatisticBlock/schema
-# defaultMessage: Animation
 msgid "Animation"
 msgstr "Animație"
 
+#. Default: "Background when inverted"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Background when inverted
 msgid "Background when inverted"
 msgstr "Fundal inversat"
 
+#. Default: "Can be formatted to fit on a dark background."
 #: StatisticBlock/schema
-# defaultMessage: Can be formatted to fit on a dark background.
 msgid "Can be formatted to fit on a dark background."
 msgstr "Util în cazul în care fundalul este întunecat."
 
+#. Default: "Can present its measurement horizontally"
 #: StatisticBlock/schema
-# defaultMessage: Can present its measurement horizontally
 msgid "Can present its measurement horizontally"
 msgstr "Afișează elementele pe orizontală"
 
+#. Default: "Columns"
 #: StatisticBlock/schema
-# defaultMessage: Columns
 msgid "Columns"
 msgstr "Coloane"
 
+#. Default: "Decimals"
 #: StatisticBlock/animationSchema
-# defaultMessage: Decimals
 msgid "Decimals"
 msgstr "Zecimale"
 
+#. Default: "Default"
 #: StatisticBlock/animationSchema
 #: StatisticBlock/schema
 #: StatisticBlock/stylesSchema
-# defaultMessage: Default
 msgid "Default"
 msgstr "Implicit"
 
+#. Default: "Duration (seconds)"
 #: StatisticBlock/animationSchema
-# defaultMessage: Duration (seconds)
 msgid "Duration (seconds)"
 msgstr "Durata (în secunde)"
 
+#. Default: "Enable animation"
 #: StatisticBlock/animationSchema
-# defaultMessage: Enable animation
 msgid "Enable animation"
 msgstr "Animație activă"
 
+#. Default: "Extra info"
 #: StatisticBlock/schema
-# defaultMessage: Extra info
 msgid "Extra info"
 msgstr "Informații suplimentare"
 
+#. Default: "Extra info variation"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Extra info variation
 msgid "Extra info variation"
 msgstr "Informații suplimentare"
 
+#. Default: "Four"
 #: StatisticBlock/schema
-# defaultMessage: Four
 msgid "Four"
 msgstr "Patru"
 
+#. Default: "Horizontal"
 #: StatisticBlock/schema
-# defaultMessage: Horizontal
 msgid "Horizontal"
 msgstr "Orizontal"
 
+#. Default: "Huge"
 #: StatisticBlock/schema
-# defaultMessage: Huge
 msgid "Huge"
 msgstr "Masiv"
 
+#. Default: "Inverted"
 #: StatisticBlock/schema
-# defaultMessage: Inverted
 msgid "Inverted"
 msgstr "Inversat"
 
+#. Default: "Label"
 #: StatisticBlock/schema
-# defaultMessage: Label
 msgid "Label"
 msgstr "Eticheta"
 
+#. Default: "Label variation"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Label variation
 msgid "Label variation"
 msgstr "Eticheta"
 
+#. Default: "Large"
 #: StatisticBlock/schema
-# defaultMessage: Large
 msgid "Large"
 msgstr "Mare"
 
+#. Default: "Link"
 #: StatisticBlock/schema
-# defaultMessage: Link
 msgid "Link"
 msgstr "Legătură"
 
+#. Default: "Mini"
 #: StatisticBlock/schema
-# defaultMessage: Mini
 msgid "Mini"
 msgstr "Minuscul"
 
+#. Default: "One"
 #: StatisticBlock/schema
-# defaultMessage: One
 msgid "One"
 msgstr "Una"
 
-#: StatisticBlock/animationSchema
-# defaultMessage: Prefix
+#. Default: "Prefix"
+#: StatisticBlock/schema
 msgid "Prefix"
 msgstr "Prefix"
 
+#. Default: "Primary"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Primary
 msgid "Primary"
 msgstr "Primară"
 
+#. Default: "Secondary"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Secondary
 msgid "Secondary"
 msgstr "Secundară"
 
+#. Default: "Size"
 #: StatisticBlock/schema
-# defaultMessage: Size
 msgid "Size"
 msgstr "Mărime"
 
+#. Default: "Small"
 #: StatisticBlock/schema
-# defaultMessage: Small
 msgid "Small"
 msgstr "Mic"
 
+#. Default: "Statistic"
 #: StatisticBlock/schema
-# defaultMessage: Statistic
 msgid "Statistic"
 msgstr "Statistică"
 
+#. Default: "Statistic block"
 #: StatisticBlock/schema
-# defaultMessage: Statistic block
 msgid "Statistic block"
 msgstr "Bloc statistică"
 
+#. Default: "Statistic item"
 #: StatisticBlock/schema
-# defaultMessage: Statistic item
 msgid "Statistic item"
 msgstr "Element statistică"
 
+#. Default: "Statistic items"
 #: StatisticBlock/schema
-# defaultMessage: Statistic items
 msgid "Statistic items"
 msgstr "Elemente statistică"
 
+#. Default: "Styles"
 #: StatisticBlock/schema
-# defaultMessage: Styles
 msgid "Styles"
 msgstr "Stiluri"
 
+#. Default: "Styling"
 #: StatisticBlock/schema
-# defaultMessage: Styling
 msgid "Styling"
 msgstr "Stilizare"
 
-#: StatisticBlock/animationSchema
-# defaultMessage: Suffix
+#. Default: "Suffix"
+#: StatisticBlock/schema
 msgid "Suffix"
 msgstr "Sufix"
 
+#. Default: "Tertiary"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Tertiary
 msgid "Tertiary"
 msgstr "Terțiară"
 
+#. Default: "Text align"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Text align
 msgid "Text align"
 msgstr "Aliniere text"
 
+#. Default: "Three"
 #: StatisticBlock/schema
-# defaultMessage: Three
 msgid "Three"
 msgstr "Trei"
 
+#. Default: "Tiny"
 #: StatisticBlock/schema
-# defaultMessage: Tiny
 msgid "Tiny"
 msgstr "Foarte mic"
 
+#. Default: "Two"
 #: StatisticBlock/schema
-# defaultMessage: Two
 msgid "Two"
 msgstr "Două"
 
+#. Default: "Value"
 #: StatisticBlock/schema
-# defaultMessage: Value
 msgid "Value"
 msgstr "Valoare"
 
+#. Default: "Value variation"
 #: StatisticBlock/stylesSchema
-# defaultMessage: Value variation
 msgid "Value variation"
 msgstr "Valoare"
