@@ -261,7 +261,7 @@ pipeline {
       post {
         always {
             sh script: "docker rmi $IMAGE_NAME-frontend", returnStatus: true
-            sh script: "docker rmi $IMAGE_NAME-frontend16", returnStatus: true
+            sh script: "docker rmi $IMAGE_NAME-frontend18", returnStatus: true
         }
       }
     }
