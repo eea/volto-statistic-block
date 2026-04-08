@@ -4,7 +4,7 @@ import isArray from 'lodash/isArray';
 import isObject from 'lodash/isObject';
 import isString from 'lodash/isString';
 import config from '@plone/volto/registry';
-import { isInternalURL, flattenToAppURL } from '@plone/volto/helpers';
+import { isInternalURL, flattenToAppURL } from '@plone/volto/helpers/Url/Url';
 import { serializeNodes as _serializeNodes } from '@plone/volto-slate/editor/render';
 
 function isValidNodesArray(value) {
