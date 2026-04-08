@@ -1,5 +1,4 @@
-import React from 'react';
-import { BlockDataForm } from '@plone/volto/components/manage/Form';
+import BlockDataForm from '@plone/volto/components/manage/Form/BlockDataForm';
 import SidebarPortal from '@plone/volto/components/manage/Sidebar/SidebarPortal';
 import { useIntl } from 'react-intl';
 import View from './View';
