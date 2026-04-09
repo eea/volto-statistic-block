@@ -5,7 +5,7 @@ import cx from 'classnames';
 import { FormattedMessage } from 'react-intl';
 import { CountUp } from '@eeacms/countup';
 import { Statistic } from 'semantic-ui-react';
-import { UniversalLink } from '@plone/volto/components';
+import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
 import {
   serializeNodes as _serializeNodes,
   serializeNodesToText,
