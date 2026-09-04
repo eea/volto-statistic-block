@@ -1,13 +1,14 @@
+import { vi } from 'vitest';
 import React from 'react';
 import { render } from '@testing-library/react';
 import View from './View';
 import isNumber from 'lodash/isNumber';
 import '@testing-library/jest-dom';
 
-jest.mock('lodash/isNumber', () => jest.fn(() => true));
-jest.mock('lodash/isNaN', () => jest.fn(() => false));
+vi.mock('lodash/isNumber', () => ({ default: vi.fn(() => true) }));
+vi.mock('lodash/isNaN', () => ({ default: vi.fn(() => false) }));
 
-jest.mock(
+vi.mock(
   '@eeacms/countup',
   () => ({
     CountUp: () => {
@@ -17,20 +18,20 @@ jest.mock(
   { virtual: true },
 );
 
-jest.mock('@plone/volto/components', () => ({
+vi.mock('@plone/volto/components', () => ({
   UniversalLink: ({ children }) => <div>{children}</div>,
 }));
 
-jest.mock('@plone/volto-slate/editor/render', () => ({
-  serializeNodesToText: jest.fn((nodes) => nodes[0]?.text || ''),
-  serializeNodes: jest.fn((nodes) => nodes[0]?.text || ''),
+vi.mock('@plone/volto-slate/editor/render', () => ({
+  serializeNodesToText: vi.fn((nodes) => nodes[0]?.text || ''),
+  serializeNodes: vi.fn((nodes) => nodes[0]?.text || ''),
 }));
 
-jest.mock('@eeacms/volto-statistic-block/helpers', () => ({
-  getFieldURL: jest.fn((href) => href),
-  serializeToNodes: jest.fn((text) => [{ text }]),
-  serializeNodes: jest.fn((text) => text || ''),
-  enhanceElementWithProps: jest.fn((children) => children),
+vi.mock('@eeacms/volto-statistic-block/helpers', () => ({
+  getFieldURL: vi.fn((href) => href),
+  serializeToNodes: vi.fn((text) => [{ text }]),
+  serializeNodes: vi.fn((text) => text || ''),
+  enhanceElementWithProps: vi.fn((children) => children),
 }));
 
 describe('Statistic View Component', () => {
