@@ -18,6 +18,19 @@ See [Statistic Component Storybook](https://eea.github.io/eea-storybook/?path=/s
 
 ![Statistic Block](https://raw.githubusercontent.com/eea/volto-statistic-block/master/docs/eea-statistic-block.gif)
 
+## Upgrade
+
+### Upgrading to 8.x
+
+> This version requires `Volto 18` or `Volto 19` and Node.js 22.
+
+The block keeps the same API, so upgrading from 7.x on Volto 18 needs no code changes. The release adds Volto 19 support and moves the repository to the Volto 19 layout, where the published package lives in `packages/volto-statistic-block`.
+
+#### Breaking changes
+
+- **Node.js 22 or newer is required** (`engines.node >= 22`), 7.x declared no engine.
+- **React 18 is required.** The package declares `react` and `react-dom` as `^18.2.0` peers, 7.x declared no peers.
+
 ## Requirements
 
 ### Backend
