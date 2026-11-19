@@ -1,3 +1,4 @@
+import { vi } from 'vitest';
 import {
   createParagraph,
   serializeToNodes,
@@ -6,7 +7,14 @@ import {
 } from './helpers';
 import config from '@plone/volto/registry';
 
-jest.mock('@plone/volto/registry', () => ({
+vi.mock('@plone/volto/registry', () => ({
+  default: {
+    settings: {
+      slate: {
+        defaultBlockType: 'test_type',
+      },
+    },
+  },
   settings: {
     slate: {
       defaultBlockType: 'test_type',
@@ -14,8 +22,8 @@ jest.mock('@plone/volto/registry', () => ({
   },
 }));
 
-jest.mock('@plone/volto-slate/editor/render', () => ({
-  serializeNodes: jest.fn(() => 'serialized'),
+vi.mock('@plone/volto-slate/editor/render', () => ({
+  serializeNodes: vi.fn(() => 'serialized'),
 }));
 
 describe('serializeToNodes', () => {
